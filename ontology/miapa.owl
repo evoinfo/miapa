@@ -3,6 +3,7 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY dsw "http://purl.org/dsw/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
     <!ENTITY prov "http://www.w3.org/TR/prov-o/#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
@@ -20,7 +21,8 @@
      xmlns:dsw="http://purl.org/dsw/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="&obo;miapa.owl">
         <owl:imports rdf:resource="&obo;cdao.owl"/>
         <owl:versionIRI rdf:resource="&obo;miapa/2013-02-01/miapa.owl"/>
@@ -61,10 +63,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000193 -->
+
+    <rdf:Description rdf:about="&obo;CDAO_0000193">
+        <rdfs:comment>For providing MIAPA-compliant edge lengths, one should normally use its subproperty miapa:edgeLength. The alternative is to use the miapa:&apos;has edge length&apos; data property or one of its subproperties.</rdfs:comment>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MIAPA_0000008 -->
 
     <owl:ObjectProperty rdf:about="&obo;MIAPA_0000008">
         <rdfs:label xml:lang="en">edgeLength</rdfs:label>
+        <rdfs:comment>This object property is one way for providing MIAPA-compliant edge lengths. The object is an instance of the appropriate cdao:EdgeLength subclass, which its value described by cdao:has_Value. The alternative is to use the miapa:&apos;has edge length&apos; data property or one of its subproperties.</rdfs:comment>
+        <rdfs:range rdf:resource="&obo;CDAO_0000046"/>
         <rdfs:subPropertyOf rdf:resource="&obo;CDAO_0000193"/>
     </owl:ObjectProperty>
     
@@ -72,45 +84,70 @@
 
     <!-- http://purl.org/dc/terms/references -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/references"/>
+    <owl:ObjectProperty rdf:about="&dcterms;references">
+        <rdfs:comment>For MIAPA reporting, recommended to be used for referencing the corresponding tree (tip) node(s) from a data matrix row.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.org/dsw/derivedFrom -->
 
-    <owl:ObjectProperty rdf:about="&dsw;derivedFrom"/>
+    <owl:ObjectProperty rdf:about="&dsw;derivedFrom">
+        <rdfs:comment>For MIAPA reporting, recommended to associate the taxonomic unit to a specimen. Use a unique identifier for the specimen, or create an instance of type dsw:Specimen described by the &quot;Darwin Core triplet&quot; (dwc:institutionCode, dwc:collectionCode, dwc:catalogNumber).</rdfs:comment>
+        <obo:IAO_0000112>:otu1
+    a cdao:TU ;
+    dsw:derivedFrom [
+        a dsw:Specimen ;
+        dwc:institutionCode &quot;MVZ&quot; ;
+        dwc:collectionCode  &quot;Birds&quot; ;
+        dwc:catalogNumber &quot;35287&quot; ;
+    ]
+.</obo:IAO_0000112>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://rs.tdwg.org/ontology/voc/TaxonConcept#toTaxon -->
 
-    <owl:ObjectProperty rdf:about="http://rs.tdwg.org/ontology/voc/TaxonConcept#toTaxon"/>
+    <owl:ObjectProperty rdf:about="http://rs.tdwg.org/ontology/voc/TaxonConcept#toTaxon">
+        <rdfs:comment>For MIAPA reporting, recommended as the property relating an OTU to a taxonomic concept (an entry in a taxonomy, such as an NCBI taxonomy reference) that has been obtained through taxonomic name or other kinds of name resolution or reconciliation procedures.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#location -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
-        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment>For MIAPA reporting, recommended as the property for indicating a spatial location for OTUs and/or specimens. An exact location can be described using geo:lat, geo:long, and geo:alt. These are the same terms DBpedia uses (see http://wiki.dbpedia.org/Datasets#h18-17). Inexact locations known by name can be described using dc:description.</rdfs:comment>
+        <rdfs:range rdf:resource="&dcterms;Location"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.w3.org/TR/prov-o/#used -->
 
-    <owl:ObjectProperty rdf:about="&prov;used"/>
+    <owl:ObjectProperty rdf:about="&prov;used">
+        <rdfs:comment>For provenance reporting in MIAPA, the property linking an activity that generated an output (such as a tree inference procedure involving software) to the parameter specification that was the plan for executing the software.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&prov;wasInfluencedBy"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.w3.org/TR/prov-o/#wasAssociatedWith -->
 
-    <owl:ObjectProperty rdf:about="&prov;wasAssociatedWith"/>
+    <owl:ObjectProperty rdf:about="&prov;wasAssociatedWith">
+        <rdfs:comment>For provenance reporting in MIAPA, the property linking the activity that generated an output to the agent that was involved in (responsible for) it. For software procedures, this will be a SoftwareAgent, and for manual procedures it will be a Person.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&prov;wasInfluencedBy"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.w3.org/TR/prov-o/#wasGeneratedBy -->
 
-    <owl:ObjectProperty rdf:about="&prov;wasGeneratedBy"/>
+    <owl:ObjectProperty rdf:about="&prov;wasGeneratedBy">
+        <rdfs:comment>For provenance reporting in MIAPA, the property linking the tree or the data matrix to the activity that generated it.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&prov;wasInfluencedBy"/>
+    </owl:ObjectProperty>
     
 
 
@@ -122,7 +159,10 @@
 
     <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+        <rdfs:comment>For MIAPA reporting, recommended as the property relating a phylogenetic tree to the data matrix (or matrices) from which it was derived.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&prov;wasInfluencedBy"/>
+    </owl:ObjectProperty>
     
 
 
@@ -137,18 +177,20 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MIAPA_0000004 -->
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000214 -->
 
-    <owl:DatatypeProperty rdf:about="&obo;MIAPA_0000004">
-        <rdfs:label xml:lang="en">branchLength</rdfs:label>
-    </owl:DatatypeProperty>
+    <rdf:Description rdf:about="&obo;CDAO_0000214">
+        <rdfs:subPropertyOf rdf:resource="&obo;MIAPA_0000014"/>
+    </rdf:Description>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MIAPA_0000005 -->
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000004 -->
 
-    <owl:DatatypeProperty rdf:about="&obo;MIAPA_0000005">
-        <rdfs:label xml:lang="en">branchSupport</rdfs:label>
+    <owl:DatatypeProperty rdf:about="&obo;MIAPA_0000004">
+        <rdfs:label xml:lang="en">branch length</rdfs:label>
+        <rdfs:comment>This data property is one way for providing MIAPA-compliant edge lengths, in this case branch lengths. The alternative is using the miapa:edgeLength (or its superproperty cdao:has_Annotation) object property, with an instance of the appropriate cdao:EdgeLength subclass as the object, which itself may have its value described by cdao:has_Value.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&obo;MIAPA_0000014"/>
     </owl:DatatypeProperty>
     
 
@@ -156,8 +198,9 @@
     <!-- http://purl.obolibrary.org/obo/MIAPA_0000006 -->
 
     <owl:DatatypeProperty rdf:about="&obo;MIAPA_0000006">
-        <rdfs:label xml:lang="en">bootstrapValue</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;MIAPA_0000005"/>
+        <rdfs:label xml:lang="en">bootstrap value</rdfs:label>
+        <rdfs:comment>This data property is one way for providing MIAPA-compliant edge lengths, in this case bootstrap values. The alternative is using the miapa:edgeLength (or its superproperty cdao:has_Annotation) object property, with an instance of the appropriate cdao:EdgeLength subclass as the object, which itself may have its value described by cdao:has_Value.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&obo;CDAO_0000214"/>
     </owl:DatatypeProperty>
     
 
@@ -165,8 +208,25 @@
     <!-- http://purl.obolibrary.org/obo/MIAPA_0000007 -->
 
     <owl:DatatypeProperty rdf:about="&obo;MIAPA_0000007">
-        <rdfs:label xml:lang="en">posteriorProbability</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&obo;MIAPA_0000005"/>
+        <rdfs:label xml:lang="en">posterior probability</rdfs:label>
+        <rdfs:comment>This data property is one way for providing MIAPA-compliant edge lengths, in this case posterior probabilities. The alternative is using the miapa:edgeLength (or its superproperty cdao:has_Annotation) object property, with an instance of the appropriate cdao:EdgeLength subclass as the object, which itself may have its value described by cdao:has_Value.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&obo;CDAO_0000214"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000014 -->
+
+    <owl:DatatypeProperty rdf:about="&obo;MIAPA_0000014">
+        <rdfs:label xml:lang="en">has edge length</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#value">
+        <rdfs:comment>For provenance reporting in MIAPA, the property for giving the literal value of a provenance entity, specifically the value of parameter specifications (which are instances of prov:Plan, a subclass of prov:Entity).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -195,6 +255,7 @@
 
     <rdf:Description rdf:about="&obo;CDAO_0000014">
         <rdfs:subClassOf rdf:resource="&prov;Activity"/>
+        <obo:IAO_0000115>A procedure that generates the tree.</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -203,6 +264,7 @@
 
     <rdf:Description rdf:about="&obo;CDAO_0000032">
         <rdfs:subClassOf rdf:resource="&prov;Activity"/>
+        <obo:IAO_0000115>A procedure that generates the alignment.</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -257,12 +319,17 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&prov;Activity"/>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="&prov;used"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&prov;wasInfluencedBy"/>
                         <owl:someValuesFrom rdf:resource="&prov;SoftwareAgent"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A procedure (a type of prov:Activity) that involves running software to generate the output, and is therefore associated with a piece of software, and uses a parameter specification as the plan for running the software.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -282,6 +349,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A procedure (a type of prov:Activity) that involves a person making manual manipulations to data, such as manually editing an alignment. An alignment procedure can involve both running software and manual editing to generate the output, and therefore ManualProcedure and SoftwareProcedure are not disjoint.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -297,7 +365,7 @@
 
     <!-- http://purl.org/dc/terms/Location -->
 
-    <owl:Class rdf:about="http://purl.org/dc/terms/Location"/>
+    <owl:Class rdf:about="&dcterms;Location"/>
     
 
 
@@ -354,6 +422,50 @@
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Plan">
         <rdfs:subClassOf rdf:resource="&prov;Entity"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000012 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000012">
+        <rdf:type rdf:resource="&obo;MIAPA_0000010"/>
+        <rdfs:label xml:lang="en">default parameters</rdfs:label>
+        <rdfs:comment>It is possible that this really should be a class instead of an individual, namely the class of all default parameter specifications (which would then have instances specific to programs).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000013 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000013">
+        <rdf:type rdf:resource="&obo;MIAPA_0000010"/>
+        <rdfs:label xml:lang="en">unspecified parameters</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&obo;CDAO_0000215">
+        <rdfs:comment>In MIAPA-compliant reporting, can be used to provide the value for instances of cdao:EdgeLength (or one of its subclasses) used for annotating edges with lengths.</rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
 
