@@ -3,6 +3,7 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY dsw "http://purl.org/dsw/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
     <!ENTITY prov "http://www.w3.org/TR/prov-o/#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
@@ -20,7 +21,8 @@
      xmlns:dsw="http://purl.org/dsw/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="&obo;miapa.owl">
         <owl:imports rdf:resource="&obo;cdao.owl"/>
         <owl:versionIRI rdf:resource="&obo;miapa/2013-02-01/miapa.owl"/>
@@ -82,7 +84,7 @@
 
     <!-- http://purl.org/dc/terms/references -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/references">
+    <owl:ObjectProperty rdf:about="&dcterms;references">
         <rdfs:comment>For MIAPA reporting, recommended to be used for referencing the corresponding tree (tip) node(s) from a data matrix row.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -117,7 +119,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
         <rdfs:comment>For MIAPA reporting, recommended as the property for indicating a spatial location for OTUs and/or specimens. An exact location can be described using geo:lat, geo:long, and geo:alt. These are the same terms DBpedia uses (see http://wiki.dbpedia.org/Datasets#h18-17). Inexact locations known by name can be described using dc:description.</rdfs:comment>
-        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:range rdf:resource="&dcterms;Location"/>
     </owl:ObjectProperty>
     
 
@@ -363,7 +365,7 @@
 
     <!-- http://purl.org/dc/terms/Location -->
 
-    <owl:Class rdf:about="http://purl.org/dc/terms/Location"/>
+    <owl:Class rdf:about="&dcterms;Location"/>
     
 
 
@@ -439,7 +441,7 @@
     <owl:NamedIndividual rdf:about="&obo;MIAPA_0000012">
         <rdf:type rdf:resource="&obo;MIAPA_0000010"/>
         <rdfs:label xml:lang="en">default parameters</rdfs:label>
-        <rdfs:comment>It&apos;s possible that this really should be a class instead of an individual, namely the class of all default parameter specifications (which would then have instances specific to programs).</rdfs:comment>
+        <rdfs:comment>It is possible that this really should be a class instead of an individual, namely the class of all default parameter specifications (which would then have instances specific to programs).</rdfs:comment>
     </owl:NamedIndividual>
     
 
