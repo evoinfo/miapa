@@ -24,9 +24,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="&obo;miapa.owl">
-        <owl:imports rdf:resource="&obo;cdao.owl"/>
         <owl:versionIRI rdf:resource="&obo;miapa/2013-02-01/miapa.owl"/>
-        <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
     </owl:Ontology>
     
 
