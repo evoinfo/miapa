@@ -251,6 +251,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CDAO_0000007 -->
+
+    <rdf:Description rdf:about="&obo;CDAO_0000007">
+        <rdfs:subClassOf rdf:resource="&obo;MIAPA_0000010"/>
+        <rdfs:comment>For MIAPA-compliant reporting, the model description is a kind of miapa:&apos;Parameter specification&apos;, and this a kind of prov:Plan.
+
+Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CDAO_0000014 -->
 
     <rdf:Description rdf:about="&obo;CDAO_0000014">
