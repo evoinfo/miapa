@@ -26,7 +26,7 @@
     <owl:Ontology rdf:about="&obo;miapa.owl">
         <owl:imports rdf:resource="&obo;cdao.owl"/>
         <owl:versionIRI rdf:resource="&obo;miapa/2013-02-01/miapa.owl"/>
-        <owl:imports rdf:resource="&prov;"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
     </owl:Ontology>
     
 
@@ -143,6 +143,15 @@
     
 
 
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="&prov;wasDerivedFrom">
+        <rdfs:comment>For MIAPA reporting, recommended as the property relating a phylogenetic tree to the data matrix (or matrices) from which it was derived.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&prov;wasInfluencedBy"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
 
     <owl:ObjectProperty rdf:about="&prov;wasGeneratedBy">
@@ -155,15 +164,6 @@
     <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
 
     <owl:ObjectProperty rdf:about="&prov;wasInfluencedBy"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
-        <rdfs:comment>For MIAPA reporting, recommended as the property relating a phylogenetic tree to the data matrix (or matrices) from which it was derived.</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="&prov;wasInfluencedBy"/>
-    </owl:ObjectProperty>
     
 
 
@@ -226,7 +226,7 @@
 
     <!-- http://www.w3.org/ns/prov#value -->
 
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#value">
+    <owl:DatatypeProperty rdf:about="&prov;value">
         <rdfs:comment>For provenance reporting in MIAPA, the property for giving the literal value of a provenance entity, specifically the value of parameter specifications (which are instances of prov:Plan, a subclass of prov:Entity).</rdfs:comment>
     </owl:DatatypeProperty>
     
@@ -248,6 +248,7 @@
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
         <rdfs:label>Operation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MIAPA_0000003"/>
+        <rdfs:comment>For the purposes of MIAPA annotation and cross-ontology interoperability, instances of edam:Operation are instances of a miapa:&apos;Software procedure&apos;, and thus prov:Activity.</rdfs:comment>
     </owl:Class>
     
 
@@ -268,6 +269,7 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     <rdf:Description rdf:about="&obo;CDAO_0000014">
         <rdfs:subClassOf rdf:resource="&prov;Activity"/>
         <obo:IAO_0000115>A procedure that generates the tree.</obo:IAO_0000115>
+        <rdfs:comment>For provenance annotation in MIAPA, the activity that generated the tree should be asserted as an instance of cdao:TreeProcedure.</rdfs:comment>
     </rdf:Description>
     
 
@@ -277,6 +279,7 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     <rdf:Description rdf:about="&obo;CDAO_0000032">
         <rdfs:subClassOf rdf:resource="&prov;Activity"/>
         <obo:IAO_0000115>A procedure that generates the alignment.</obo:IAO_0000115>
+        <rdfs:comment>For provenance annotation in MIAPA, the activity that generated the alignment should be asserted as an instance of cdao:AlignmentProcedure.</rdfs:comment>
     </rdf:Description>
     
 
@@ -325,14 +328,14 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/MIAPA_0000003 -->
 
     <owl:Class rdf:about="&obo;MIAPA_0000003">
-        <rdfs:label xml:lang="en">SoftwareProcedure</rdfs:label>
+        <rdfs:label xml:lang="en">Software procedure</rdfs:label>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&prov;Activity"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&prov;used"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+                        <owl:someValuesFrom rdf:resource="&prov;Plan"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&prov;wasInfluencedBy"/>
@@ -349,7 +352,7 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/MIAPA_0000009 -->
 
     <owl:Class rdf:about="&obo;MIAPA_0000009">
-        <rdfs:label xml:lang="en">ManualProcedure</rdfs:label>
+        <rdfs:label xml:lang="en">Manual procedure</rdfs:label>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -370,7 +373,7 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
 
     <owl:Class rdf:about="&obo;MIAPA_0000010">
         <rdfs:label xml:lang="en">Parameter specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+        <rdfs:subClassOf rdf:resource="&prov;Plan"/>
     </owl:Class>
     
 
@@ -389,19 +392,25 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
 
     <!-- http://www.w3.org/ns/prov#Activity -->
 
-    <owl:Class rdf:about="&prov;Activity"/>
+    <owl:Class rdf:about="&prov;Activity">
+        <rdfs:comment>For provenance annotation in MIAPA, instances of prov:Activity (or one of its subclasses) generate parts of the data such as the alignment and the tree. They are linked to tree or alignment through the property prov:wasGeneratedBy.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.w3.org/ns/prov#Agent -->
 
-    <owl:Class rdf:about="&prov;Agent"/>
+    <rdf:Description rdf:about="&prov;Agent">
+        <rdfs:comment>For provenance annotation in MIAPA, instances of prov:Agent, or more specifically an instance of prov:Person and/or prov:SoftwareAgent, are involved in (associated with, responsible for) the prov:Activity that generated a certain piece of the data (such as an alignment, or a tree).</rdfs:comment>
+    </rdf:Description>
     
 
 
     <!-- http://www.w3.org/ns/prov#Entity -->
 
-    <owl:Class rdf:about="&prov;Entity"/>
+    <owl:Class rdf:about="&prov;Entity">
+        <rdfs:comment>For provenance annotation in MIAPA, the instances of a tree and of an alignment are entities for which provenance information (how they were generated) is required to be tracked (and thus annotated).</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -413,26 +422,18 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     
 
 
+    <!-- http://www.w3.org/ns/prov#Plan -->
+
+    <owl:Class rdf:about="&prov;Plan">
+        <rdfs:subClassOf rdf:resource="&prov;Entity"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/ns/prov#SoftwareAgent -->
 
     <owl:Class rdf:about="&prov;SoftwareAgent">
         <rdfs:subClassOf rdf:resource="&prov;Agent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Collection -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Collection">
-        <rdfs:subClassOf rdf:resource="&prov;Entity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Plan -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Plan">
-        <rdfs:subClassOf rdf:resource="&prov;Entity"/>
     </owl:Class>
     
 

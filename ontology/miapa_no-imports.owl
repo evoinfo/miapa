@@ -390,27 +390,25 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
 
     <!-- http://www.w3.org/ns/prov#Activity -->
 
-    <owl:Class rdf:about="&prov;Activity"/>
+    <owl:Class rdf:about="&prov;Activity">
+        <rdfs:comment>For provenance annotation in MIAPA, instances of prov:Activity (or one of its subclasses) generate parts of the data such as the alignment and the tree. They are linked to tree or alignment through the property prov:wasGeneratedBy.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://www.w3.org/ns/prov#Agent -->
 
-    <owl:Class rdf:about="&prov;Agent"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Collection -->
-
-    <owl:Class rdf:about="&prov;Collection">
-        <rdfs:subClassOf rdf:resource="&prov;Entity"/>
-    </owl:Class>
+    <rdf:Description rdf:about="&prov;Agent">
+        <rdfs:comment>For provenance annotation in MIAPA, instances of prov:Agent, or more specifically an instance of prov:Person and/or prov:SoftwareAgent, are involved in (associated with, responsible for) the prov:Activity that generated a certain piece of the data (such as an alignment, or a tree).</rdfs:comment>
+    </rdf:Description>
     
 
 
     <!-- http://www.w3.org/ns/prov#Entity -->
 
-    <owl:Class rdf:about="&prov;Entity"/>
+    <owl:Class rdf:about="&prov;Entity">
+        <rdfs:comment>For provenance annotation in MIAPA, the instances of a tree and of an alignment are entities for which provenance information (how they were generated) is required to be tracked (and thus annotated).</rdfs:comment>
+    </owl:Class>
     
 
 
