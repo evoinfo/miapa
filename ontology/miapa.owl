@@ -86,7 +86,7 @@
     <!-- http://purl.org/dc/terms/references -->
 
     <owl:ObjectProperty rdf:about="&dcterms;references">
-        <rdfs:comment>For MIAPA reporting, recommended to be used for referencing the corresponding tree (tip) node(s) from a data matrix row.</rdfs:comment>
+        <rdfs:comment>For MIAPA reporting, recommended for referencing sequence and other identifiers for a TU as applicable.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -476,6 +476,9 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="&obo;CDAO_0000196">
+        <rdfs:comment>For MIAPA reporting, recommended to be used for referencing the corresponding tree (tip) node(s) from a data matrix row</rdfs:comment>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;CDAO_0000215">
         <rdfs:comment>In MIAPA-compliant reporting, can be used to provide the value for instances of cdao:EdgeLength (or one of its subclasses) used for annotating edges with lengths.</rdfs:comment>
     </rdf:Description>
