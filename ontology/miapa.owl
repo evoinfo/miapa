@@ -509,6 +509,96 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000022 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000022">
+        <rdfs:label xml:lang="en">SINA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000023 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000023">
+        <rdfs:label xml:lang="en">SILVA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000024 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000024">
+        <rdfs:label xml:lang="en">PRANK</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000025 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000025">
+        <rdfs:label xml:lang="en">PAUP*</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000026 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000026">
+        <rdfs:label xml:lang="en">TNT</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000027 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000027">
+        <rdfs:label xml:lang="en">PhyML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000028 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000028">
+        <rdfs:label xml:lang="en">AMPHORA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000032 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000032">
+        <rdfs:label xml:lang="en">GTR+GAMMA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000033 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000033">
+        <rdfs:label xml:lang="en">GTR+CAT</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000034 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000034">
+        <rdfs:label xml:lang="en">WAG</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000020"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/dc/terms/Location -->
 
     <owl:Class rdf:about="&dcterms;Location"/>
@@ -640,6 +730,42 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     <owl:NamedIndividual rdf:about="&obo;MIAPA_0000021">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
         <rdfs:label xml:lang="en">6.712b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000029 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000029">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">4.0b10</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000030 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000030">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">7.2.7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000031 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000031">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">10</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000036 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000036">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">7.2.6, Pthreads-based and SSE3-vectorized</rdfs:label>
     </owl:NamedIndividual>
     
 
