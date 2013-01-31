@@ -25,7 +25,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2013/0/untitled-ontology-6">
+    <owl:Ontology rdf:about="http://phylotastic.org/annot/peters_miapa-annotation.owl">
         <owl:imports rdf:resource="&obo;miapa.owl"/>
     </owl:Ontology>
     
@@ -46,17 +46,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -90,7 +79,7 @@
         <rdf:type rdf:resource="http://edamontology.org/operation_0323"/>
         <rdf:type rdf:resource="&obo;MIAPA_0000003"/>
         <prov:used rdf:resource="http://phylotastic.org/annot/GTRCATModel"/>
-        <prov:wasAssociatedWith rdf:resource="http://phylotastic.org/annot/RaXMLAgent"/>
+        <prov:wasAssociatedWith rdf:resource="http://phylotastic.org/annot/RaXML_7.2.8"/>
     </owl:NamedIndividual>
     
 
@@ -167,17 +156,9 @@
     
 
 
-    <!-- http://phylotastic.org/annot/PlanForPetersAlignmentInference -->
+    <!-- http://phylotastic.org/annot/RaXML_7.2.8 -->
 
-    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/PlanForPetersAlignmentInference">
-        <rdf:type rdf:resource="&prov;Plan"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://phylotastic.org/annot/RaXMLAgent -->
-
-    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/RaXMLAgent">
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/RaXML_7.2.8">
         <rdf:type rdf:resource="&obo;MIAPA_0000016"/>
         <rdfs:label>RAxML_7.2.8</rdfs:label>
         <swo2:SWO_0000740 rdf:resource="http://phylotastic.org/annot/UseMaximumLikelihood"/>
@@ -193,7 +174,6 @@
         <rdfs:label>Maximum Likelihood algorithm</rdfs:label>
         <dc:description>The inference algorithm uses maximum likelihood as an optimality criterion. </dc:description>
     </owl:NamedIndividual>
-
 </rdf:RDF>
 
 
