@@ -4,7 +4,9 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY dsw "http://purl.org/dsw/" >
     <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
     <!ENTITY prov "http://www.w3.org/ns/prov#" >
+    <!ENTITY swo2 "http://www.ebi.ac.uk/efo/swo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
@@ -18,6 +20,8 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:swo2="http://www.ebi.ac.uk/efo/swo/"
+     xmlns:swo="http://www.ebi.ac.uk/swo/"
      xmlns:dsw="http://purl.org/dsw/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -84,7 +88,7 @@
     <!-- http://purl.org/dc/terms/references -->
 
     <owl:ObjectProperty rdf:about="&dcterms;references">
-        <rdfs:comment>For MIAPA reporting, recommended to be used for referencing the corresponding tree (tip) node(s) from a data matrix row.</rdfs:comment>
+        <rdfs:comment>For MIAPA reporting, recommended for referencing sequence and other identifiers for a TU as applicable.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -110,6 +114,34 @@
 
     <owl:ObjectProperty rdf:about="http://rs.tdwg.org/ontology/voc/TaxonConcept#toTaxon">
         <rdfs:comment>For MIAPA reporting, recommended as the property relating an OTU to a taxonomic concept (an entry in a taxonomy, such as an NCBI taxonomy reference) that has been obtained through taxonomic name or other kinds of name resolution or reconciliation procedures.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000740 -->
+
+    <owl:ObjectProperty rdf:about="&swo2;SWO_0000740">
+        <rdfs:label>implements</rdfs:label>
+        <rdfs:domain rdf:resource="&obo;IAO_0000010"/>
+        <rdfs:range rdf:resource="&obo;IAO_0000064"/>
+        <owl:inverseOf rdf:resource="&swo;SWO_0000085"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000085 -->
+
+    <owl:ObjectProperty rdf:about="&swo;SWO_0000085">
+        <rdfs:label>is implemented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0004000 -->
+
+    <owl:ObjectProperty rdf:about="&swo;SWO_0004000">
+        <rdfs:label>has version</rdfs:label>
+        <rdfs:range rdf:resource="&obo;IAO_0000129"/>
     </owl:ObjectProperty>
     
 
@@ -245,8 +277,28 @@
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
         <rdfs:label>Operation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MIAPA_0000003"/>
-        <rdfs:comment>For the purposes of MIAPA annotation and cross-ontology interoperability, instances of edam:Operation are instances of a miapa:&apos;Software procedure&apos;, and thus prov:Activity.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="&prov;Activity"/>
+        <rdfs:comment>For the purposes of MIAPA annotation and cross-ontology interoperability, instances of edam:Operation are instances of a prov:Activity. They need to be further classified as to whether they are maipa:&apos;Manual procedure&apos; or miapa:&apos;Software procedure&apos; instances.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_0323 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_0323">
+        <rdfs:label>Phylogenetic tree construction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000014"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_2928 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_2928">
+        <rdfs:label>Alignment construction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000032"/>
     </owl:Class>
     
 
@@ -300,7 +352,59 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
 
     <owl:Class rdf:about="&obo;IAO_0000010">
         <rdfs:label>software</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
         <rdfs:subClassOf rdf:resource="&prov;SoftwareAgent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000028 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000028">
+        <rdfs:label>symbol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000033">
+        <rdfs:label>directive information entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000064">
+        <rdfs:label>algorithm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000104">
+        <rdfs:label>plan specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000129 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000129">
+        <rdfs:label>version number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000028"/>
     </owl:Class>
     
 
@@ -376,6 +480,123 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000015 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000015">
+        <rdfs:label xml:lang="en">Maximum likelihood method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&swo2;SWO_0000592"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000016 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000016">
+        <rdfs:label xml:lang="en">RAxML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000020 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000020">
+        <rdfs:label xml:lang="en">MAFFT</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000022 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000022">
+        <rdfs:label xml:lang="en">SINA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000023 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000023">
+        <rdfs:label xml:lang="en">SILVA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000024 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000024">
+        <rdfs:label xml:lang="en">PRANK</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000025 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000025">
+        <rdfs:label xml:lang="en">PAUP*</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000026 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000026">
+        <rdfs:label xml:lang="en">TNT</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000027 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000027">
+        <rdfs:label xml:lang="en">PhyML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000028 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000028">
+        <rdfs:label xml:lang="en">AMPHORA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000032 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000032">
+        <rdfs:label xml:lang="en">GTR+GAMMA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000033 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000033">
+        <rdfs:label xml:lang="en">GTR+CAT</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000034 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000034">
+        <rdfs:label xml:lang="en">WAG</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CDAO_0000020"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/dc/terms/Location -->
 
     <owl:Class rdf:about="&dcterms;Location"/>
@@ -385,6 +606,24 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     <!-- http://purl.org/dsw/Specimen -->
 
     <owl:Class rdf:about="&dsw;Specimen"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000592 -->
+
+    <owl:Class rdf:about="&swo2;SWO_0000592">
+        <rdfs:label>Likelihood method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000060 -->
+
+    <owl:Class rdf:about="&swo;SWO_0000060">
+        <rdfs:label xml:lang="en">MUSCLE</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
     
 
 
@@ -466,6 +705,69 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000017 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000017">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">7.2.8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000019 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000019">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">3.7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000021 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000021">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">6.712b</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000029 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000029">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">4.0b10</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000030 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000030">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">7.2.7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000031 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000031">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">10</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000036 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000036">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">7.2.6, Pthreads-based and SSE3-vectorized</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -474,6 +776,9 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="&obo;CDAO_0000196">
+        <rdfs:comment>For MIAPA reporting, recommended to be used for referencing the corresponding tree (tip) node(s) from a data matrix row</rdfs:comment>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;CDAO_0000215">
         <rdfs:comment>In MIAPA-compliant reporting, can be used to provide the value for instances of cdao:EdgeLength (or one of its subclasses) used for annotating edges with lengths.</rdfs:comment>
     </rdf:Description>
