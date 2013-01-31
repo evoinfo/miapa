@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY prov "http://www.w3.org/ns/prov#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2013/0/untitled-ontology-14#"
+     xml:base="http://www.semanticweb.org/ontologies/2013/0/untitled-ontology-14"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2013/0/untitled-ontology-14">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/miapa.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://phylotastic.org/GoloboffAlignEditActivity -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GoloboffAlignEditActivity">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000032"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GoloboffAlignment -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GoloboffAlignment">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000056"/>
+        <prov:wasGeneratedBy rdf:resource="http://phylotastic.org/GoloboffMafftAlignmentActivity"/>
+        <prov:wasGeneratedBy rdf:resource="http://phylotastic.org/GoloboffMuscleAlignmentActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GoloboffAlignmentManualEdit -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GoloboffAlignmentManualEdit">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000032"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GoloboffEditedAlignment -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GoloboffEditedAlignment">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000056"/>
+        <prov:wasDerivedFrom rdf:resource="http://phylotastic.org/GoloboffAlignment"/>
+        <prov:wasGeneratedBy rdf:resource="http://phylotastic.org/GoloboffAlignmentManualEdit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GoloboffMafft -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GoloboffMafft">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000020"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GoloboffMafftAlignmentActivity -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GoloboffMafftAlignmentActivity">
+        <rdf:type rdf:resource="http://edamontology.org/operation_2928"/>
+        <prov:wasAssociatedWith rdf:resource="http://phylotastic.org/GoloboffMafft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GoloboffMuscle -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GoloboffMuscle">
+        <rdf:type rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000060"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GoloboffMuscleAlignmentActivity -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GoloboffMuscleAlignmentActivity">
+        <rdf:type rdf:resource="http://edamontology.org/operation_2928"/>
+        <prov:wasAssociatedWith rdf:resource="http://phylotastic.org/GoloboffMuscle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GoloboffTNTInstance -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GoloboffTNTInstance">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000026"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GoloboffTree -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GoloboffTree">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000073"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000088"/>
+        <prov:wasGeneratedBy rdf:resource="http://phylotastic.org/GoloboffEditedAlignment"/>
+        <prov:wasGeneratedBy rdf:resource="http://phylotastic.org/GoloboffTreeConstruction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GoloboffTreeConstruction -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GoloboffTreeConstruction">
+        <rdf:type rdf:resource="http://edamontology.org/operation_0323"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000003"/>
+        <prov:wasAssociatedWith rdf:resource="http://phylotastic.org/GoloboffTNTInstance"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+

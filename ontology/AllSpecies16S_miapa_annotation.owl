@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY edamontology "http://edamontology.org/" >
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
+    <!ENTITY prov "http://www.w3.org/ns/prov#" >
+    <!ENTITY swo2 "http://www.ebi.ac.uk/efo/swo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY annotations_pontelli "http://phylotastic.org/annotations_pontelli/" >
+    <!ENTITY annotations_pontelli2 "http://phylotastic.org/annotations_pontelli/7." >
+    <!ENTITY AllSpecies16 "http://phylotastic.org/hack2/hash/AllSpecies16#" >
+]>
+
+
+<rdf:RDF xmlns="http://phylotastic.org/hack2/hash/AllSpecies16.owl#"
+     xml:base="http://phylotastic.org/hack2/hash/AllSpecies16.owl"
+     xmlns:edamontology="http://edamontology.org/"
+     xmlns:annotations_pontelli="http://phylotastic.org/annotations_pontelli/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:swo2="http://www.ebi.ac.uk/efo/swo/"
+     xmlns:swo="http://www.ebi.ac.uk/swo/"
+     xmlns:annotations_pontelli2="&annotations_pontelli;7."
+     xmlns:AllSpecies16="http://phylotastic.org/hack2/hash/AllSpecies16#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://phylotastic.org/hack2/hash/AllSpecies16.owl">
+        <owl:imports rdf:resource="&obo;miapa.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/7.x_MPI -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;7.x_MPI">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/AllSpecies16Alignment -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;AllSpecies16Alignment">
+        <rdf:type rdf:resource="&obo;CDAO_0000056"/>
+        <prov:wasGeneratedBy rdf:resource="&annotations_pontelli;AllSpecies16AlignmentActivity"/>
+        <prov:hadPrimarySource rdf:resource="&annotations_pontelli;AllSpecies16SINAAlignment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/AllSpecies16AlignmentActivity -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;AllSpecies16AlignmentActivity">
+        <rdf:type rdf:resource="&edamontology;operation_2928"/>
+        <rdf:type rdf:resource="&obo;MIAPA_0000009"/>
+        <rdfs:comment>The complete dataset of 9975 sequences (type strains and non-type strains) was manually checked in order to improve inaccurately placed bases. For this, the secondary structure of the SSU was taken into account</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/AllSpecies16SINAAlignment -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;AllSpecies16SINAAlignment">
+        <rdf:type rdf:resource="&obo;CDAO_0000056"/>
+        <prov:wasGeneratedBy rdf:resource="&annotations_pontelli;AllSpecies16SINAAlignmentActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/AllSpecies16SINAAlignmentActivity -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;AllSpecies16SINAAlignmentActivity">
+        <rdf:type rdf:resource="&edamontology;operation_2928"/>
+        <rdf:type rdf:resource="&obo;MIAPA_0000003"/>
+        <prov:wasAssociatedWith rdf:resource="&annotations_pontelli;SINA_at_SILVA"/>
+        <prov:used rdf:resource="&obo;MIAPA_0000013"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/AllSpecies16TreeInferenceActivity -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;AllSpecies16TreeInferenceActivity">
+        <rdf:type rdf:resource="&edamontology;operation_0323"/>
+        <rdf:type rdf:resource="&obo;MIAPA_0000003"/>
+        <prov:wasAssociatedWith rdf:resource="&annotations_pontelli;RAxML_7.x"/>
+        <prov:used rdf:resource="&obo;MIAPA_0000013"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/Maximum_Likelihood_Algorithm -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;Maximum_Likelihood_Algorithm">
+        <rdf:type rdf:resource="&obo;MIAPA_0000015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/RAxML_7.x -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;RAxML_7.x">
+        <rdf:type rdf:resource="&obo;MIAPA_0000016"/>
+        <swo:SWO_0004000 rdf:resource="&annotations_pontelli;7.x_MPI"/>
+        <swo2:SWO_0000740 rdf:resource="&annotations_pontelli;Maximum_Likelihood_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/SINA_at_SILVA -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;SINA_at_SILVA">
+        <rdf:type rdf:resource="&obo;MIAPA_0000022"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/hack2/hash/AllSpecies16#allspecies16Tree -->
+
+    <owl:NamedIndividual rdf:about="&AllSpecies16;allspecies16Tree">
+        <rdf:type rdf:resource="&obo;CDAO_0000073"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000088"/>
+        <prov:wasDerivedFrom rdf:resource="&annotations_pontelli;AllSpecies16Alignment"/>
+        <prov:wasGeneratedBy rdf:resource="&annotations_pontelli;AllSpecies16TreeInferenceActivity"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

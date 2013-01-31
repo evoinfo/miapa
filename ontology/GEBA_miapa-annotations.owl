@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY prov "http://www.w3.org/ns/prov#" >
+    <!ENTITY swo "http://www.ebi.ac.uk/efo/swo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://phylotastic.org/annot/GEBA_miapa-annnotation.owl#"
+     xml:base="http://phylotastic.org/annot/GEBA_miapa-annnotation.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:swo="http://www.ebi.ac.uk/efo/swo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://phylotastic.org/annot/GEBA_miapa-annnotation.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/miapa.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000027 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MIAPA_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000015"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://phylotastic.org/AMPHORA -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/AMPHORA">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000028"/>
+        <rdfs:label>GEBA AMPHORA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GEBAmatrixAlignment -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GEBAmatrixAlignment">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000056"/>
+        <prov:wasGeneratedBy rdf:resource="http://phylotastic.org/GEBAmatrixAlignmentConstruction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GEBAmatrixAlignmentConstruction -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GEBAmatrixAlignmentConstruction">
+        <rdf:type rdf:resource="http://edamontology.org/operation_2928"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000003"/>
+        <prov:wasAssociatedWith rdf:resource="http://phylotastic.org/AMPHORA"/>
+        <prov:used rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000013"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GEBAtree -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GEBAtree">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000012"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000073"/>
+        <prov:wasDerivedFrom rdf:resource="http://phylotastic.org/GEBAmatrixAlignment"/>
+        <prov:wasGeneratedBy rdf:resource="http://phylotastic.org/GEBAtreeConstruction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GEBAtreeConstruction -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GEBAtreeConstruction">
+        <rdf:type rdf:resource="http://edamontology.org/operation_0323"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000003"/>
+        <prov:wasAssociatedWith rdf:resource="http://phylotastic.org/PhyML"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/PhyML -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/PhyML">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000027"/>
+        <rdfs:label>GEBA PhyML</rdfs:label>
+        <swo:SWO_0000740 rdf:resource="http://phylotastic.org/useMaximumLikelihood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/useMaximumLikelihood -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/useMaximumLikelihood">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000015"/>
+        <rdfs:label>Maximum Likelihood Algorithm</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
