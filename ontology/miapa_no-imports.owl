@@ -293,6 +293,15 @@
     
 
 
+    <!-- http://edamontology.org/operation_0539 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_0539">
+        <rdfs:label>Phylogenetic tree construction (method centric)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0323"/>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/operation_2928 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2928">
@@ -516,15 +525,6 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MIAPA_0000023 -->
-
-    <owl:Class rdf:about="&obo;MIAPA_0000023">
-        <rdfs:label xml:lang="en">SILVA</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MIAPA_0000024 -->
 
     <owl:Class rdf:about="&obo;MIAPA_0000024">
@@ -593,6 +593,89 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     <owl:Class rdf:about="&obo;MIAPA_0000034">
         <rdfs:label xml:lang="en">WAG</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;CDAO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000037 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000037">
+        <rdfs:label xml:lang="en">Parsimony method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
+        <obo:IAO_0000115>A method for finding the minimum transitions to account for a character given a phylogenetic tree, and by extension, a character-based phylogeny inference method in which the inferred phylogenetic tree (the &quot;maximum parsimony tree&quot;) is the phylogenetic tree that minimizes evolutionary transitions over all characters.</obo:IAO_0000115>
+        <obo:IAO_0000119>Prosdocimi, Francisco, Brandon Chisham, Enrico Pontelli, J.D. Thompson, and Arlin Stoltzfus. 2009. “Initial Implementation of a Comparative Data Analysis Ontology.” Evolutionary Bioinformatics Online (5): 47–66. http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2747124/</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.nescent.org/wg_evoinfo/Concept_Glossary#Parsimony_Method</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000038 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000038">
+        <rdfs:label xml:lang="en">Phylogenetic tree construction (pruning and grafting)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0539"/>
+        <obo:IAO_0000115>Phylogenetic tree construction that prunes and grafts a collection of one or more source trees to create the resulting tree.</obo:IAO_0000115>
+        <obo:IAO_0000117>Hilmar Lapp</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000039 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000039">
+        <rdfs:label xml:lang="en">SetOfNetworks</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&prov;Collection"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&prov;hadMember"/>
+                        <owl:allValuesFrom rdf:resource="&obo;CDAO_0000006"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;CDAO_0000118"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;CDAO_0000198"/>
+                        <owl:allValuesFrom rdf:resource="&obo;CDAO_0000006"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000040 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000040">
+        <rdfs:label xml:lang="en">SetOfTrees</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MIAPA_0000039"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;CDAO_0000198"/>
+                        <owl:allValuesFrom rdf:resource="&obo;CDAO_0000110"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&prov;Collection"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&prov;hadMember"/>
+                        <owl:allValuesFrom rdf:resource="&obo;CDAO_0000110"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
