@@ -2,30 +2,36 @@
 
 
 <!DOCTYPE rdf:RDF [
+    <!ENTITY edamontology "http://edamontology.org/" >
     <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
     <!ENTITY prov "http://www.w3.org/ns/prov#" >
     <!ENTITY swo2 "http://www.ebi.ac.uk/efo/swo/" >
+    <!ENTITY annot "http://phylotastic.org/annot/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Peters2011hymenoptera "http://phylotastic.org/hack2/bd414f8f72a8fabb9454b4ea72cf0e8a760171ba/Peters2011hymenoptera#" >
 ]>
 
 
-<rdf:RDF xmlns="http://phylotastic.org/annot/#"
+<rdf:RDF xmlns="&annot;#"
      xml:base="http://phylotastic.org/annot/"
+     xmlns:edamontology="http://edamontology.org/"
+     xmlns:Peters2011hymenoptera="http://phylotastic.org/hack2/bd414f8f72a8fabb9454b4ea72cf0e8a760171ba/Peters2011hymenoptera#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:swo2="http://www.ebi.ac.uk/efo/swo/"
      xmlns:swo="http://www.ebi.ac.uk/swo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:annot="http://phylotastic.org/annot/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://phylotastic.org/annot/peters_miapa-annotation.owl">
+    <owl:Ontology rdf:about="&annot;peters_miapa-annotation.owl">
         <owl:imports rdf:resource="&obo;miapa.owl"/>
     </owl:Ontology>
     
@@ -66,7 +72,7 @@
 
     <!-- http://phylotastic.org/annot/GTRCATModel -->
 
-    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/GTRCATModel">
+    <owl:NamedIndividual rdf:about="&annot;GTRCATModel">
         <rdf:type rdf:resource="&obo;CDAO_0000020"/>
         <rdfs:label>GTRCAT Model</rdfs:label>
     </owl:NamedIndividual>
@@ -75,18 +81,18 @@
 
     <!-- http://phylotastic.org/annot/InferenceOfPetersTree -->
 
-    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/InferenceOfPetersTree">
-        <rdf:type rdf:resource="http://edamontology.org/operation_0323"/>
+    <owl:NamedIndividual rdf:about="&annot;InferenceOfPetersTree">
+        <rdf:type rdf:resource="&edamontology;operation_0323"/>
         <rdf:type rdf:resource="&obo;MIAPA_0000003"/>
-        <prov:used rdf:resource="http://phylotastic.org/annot/GTRCATModel"/>
-        <prov:wasAssociatedWith rdf:resource="http://phylotastic.org/annot/RaXML_7.2.8"/>
+        <prov:used rdf:resource="&annot;GTRCATModel"/>
+        <prov:wasAssociatedWith rdf:resource="&annot;RaXML_7.2.8"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://phylotastic.org/annot/MAFFT -->
 
-    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/MAFFT">
+    <owl:NamedIndividual rdf:about="&annot;MAFFT">
         <rdf:type rdf:resource="&obo;MIAPA_0000020"/>
         <rdfs:label>MAFFT_6.712b</rdfs:label>
         <swo:SWO_0004000 rdf:resource="&obo;MIAPA_0000021"/>
@@ -96,7 +102,7 @@
 
     <!-- http://phylotastic.org/annot/Muscle -->
 
-    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/Muscle">
+    <owl:NamedIndividual rdf:about="&annot;Muscle">
         <rdf:type rdf:resource="&swo;SWO_0000060"/>
         <rdfs:label>MUSCLE_3.7</rdfs:label>
         <swo:SWO_0004000 rdf:resource="&obo;MIAPA_0000019"/>
@@ -106,29 +112,29 @@
 
     <!-- http://phylotastic.org/annot/PetersAlignment -->
 
-    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/PetersAlignment">
+    <owl:NamedIndividual rdf:about="&annot;PetersAlignment">
         <rdf:type rdf:resource="&obo;CDAO_0000056"/>
-        <prov:hadPrimarySource rdf:resource="http://phylotastic.org/annot/PetersMAFFTAlignment"/>
-        <prov:wasGeneratedBy rdf:resource="http://phylotastic.org/annot/PetersMUSCLEAlignmentActivity"/>
+        <prov:hadPrimarySource rdf:resource="&annot;PetersMAFFTAlignment"/>
+        <prov:wasGeneratedBy rdf:resource="&annot;PetersMUSCLEAlignmentActivity"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://phylotastic.org/annot/PetersMAFFTAlignment -->
 
-    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/PetersMAFFTAlignment">
+    <owl:NamedIndividual rdf:about="&annot;PetersMAFFTAlignment">
         <rdf:type rdf:resource="&obo;CDAO_0000056"/>
-        <prov:wasGeneratedBy rdf:resource="http://phylotastic.org/annot/PetersMAFFTAlignment_activity"/>
+        <prov:wasGeneratedBy rdf:resource="&annot;PetersMAFFTAlignment_activity"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://phylotastic.org/annot/PetersMAFFTAlignment_activity -->
 
-    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/PetersMAFFTAlignment_activity">
-        <rdf:type rdf:resource="http://edamontology.org/operation_2928"/>
+    <owl:NamedIndividual rdf:about="&annot;PetersMAFFTAlignment_activity">
+        <rdf:type rdf:resource="&edamontology;operation_2928"/>
         <rdf:type rdf:resource="&obo;MIAPA_0000003"/>
-        <prov:wasAssociatedWith rdf:resource="http://phylotastic.org/annot/MAFFT"/>
+        <prov:wasAssociatedWith rdf:resource="&annot;MAFFT"/>
         <prov:used rdf:resource="&obo;MIAPA_0000012"/>
     </owl:NamedIndividual>
     
@@ -136,32 +142,21 @@
 
     <!-- http://phylotastic.org/annot/PetersMUSCLEAlignmentActivity -->
 
-    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/PetersMUSCLEAlignmentActivity">
-        <rdf:type rdf:resource="http://edamontology.org/operation_2928"/>
+    <owl:NamedIndividual rdf:about="&annot;PetersMUSCLEAlignmentActivity">
+        <rdf:type rdf:resource="&edamontology;operation_2928"/>
         <rdf:type rdf:resource="&obo;MIAPA_0000003"/>
-        <prov:wasAssociatedWith rdf:resource="http://phylotastic.org/annot/Muscle"/>
+        <prov:wasAssociatedWith rdf:resource="&annot;Muscle"/>
         <prov:used rdf:resource="&obo;MIAPA_0000013"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://phylotastic.org/annot/PetersTree -->
-
-    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/PetersTree">
-        <rdf:type rdf:resource="&obo;CDAO_0000012"/>
-        <rdf:type rdf:resource="&obo;CDAO_0000073"/>
-        <prov:wasGeneratedBy rdf:resource="http://phylotastic.org/annot/InferenceOfPetersTree"/>
-        <prov:wasDerivedFrom rdf:resource="http://phylotastic.org/annot/PetersAlignment"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://phylotastic.org/annot/RaXML_7.2.8 -->
 
-    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/RaXML_7.2.8">
+    <owl:NamedIndividual rdf:about="&annot;RaXML_7.2.8">
         <rdf:type rdf:resource="&obo;MIAPA_0000016"/>
         <rdfs:label>RAxML_7.2.8</rdfs:label>
-        <swo2:SWO_0000740 rdf:resource="http://phylotastic.org/annot/UseMaximumLikelihood"/>
+        <swo2:SWO_0000740 rdf:resource="&annot;UseMaximumLikelihood"/>
         <swo:SWO_0004000 rdf:resource="&obo;MIAPA_0000017"/>
     </owl:NamedIndividual>
     
@@ -169,14 +164,25 @@
 
     <!-- http://phylotastic.org/annot/UseMaximumLikelihood -->
 
-    <owl:NamedIndividual rdf:about="http://phylotastic.org/annot/UseMaximumLikelihood">
+    <owl:NamedIndividual rdf:about="&annot;UseMaximumLikelihood">
         <rdf:type rdf:resource="&obo;MIAPA_0000015"/>
         <rdfs:label>Maximum Likelihood algorithm</rdfs:label>
         <dc:description>The inference algorithm uses maximum likelihood as an optimality criterion. </dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/hack2/bd414f8f72a8fabb9454b4ea72cf0e8a760171ba/Peters2011hymenoptera#tree0000001 -->
+
+    <owl:NamedIndividual rdf:about="&Peters2011hymenoptera;tree0000001">
+        <rdf:type rdf:resource="&obo;CDAO_0000012"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000073"/>
+        <prov:wasGeneratedBy rdf:resource="&annot;InferenceOfPetersTree"/>
+        <prov:wasDerivedFrom rdf:resource="&annot;PetersAlignment"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 

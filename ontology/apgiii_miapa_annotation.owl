@@ -11,6 +11,7 @@
     <!ENTITY APGIII "http://phylotastic.org/hack2/hash/APGIII#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY annotations_pontelli "http://phylotastic.org/annotations_pontelli/" >
+    <!ENTITY APGIII2 "http://phylotastic.org/hack2/18f34ee0f9f099709c0f1fbc7b0b4c34f3d940bd/APGIII#" >
 ]>
 
 
@@ -21,6 +22,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:annotations_pontelli="http://phylotastic.org/annotations_pontelli/"
+     xmlns:APGIII2="http://phylotastic.org/hack2/18f34ee0f9f099709c0f1fbc7b0b4c34f3d940bd/APGIII#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -51,9 +53,9 @@
     
 
 
-    <!-- http://phylotastic.org/hack2/hash/APGIII#apgiiitree -->
+    <!-- http://phylotastic.org/hack2/18f34ee0f9f099709c0f1fbc7b0b4c34f3d940bd/APGIII#tree0000001 -->
 
-    <owl:NamedIndividual rdf:about="&APGIII;apgiiitree">
+    <owl:NamedIndividual rdf:about="&APGIII2;tree0000001">
         <rdf:type rdf:resource="&obo;CDAO_0000012"/>
         <rdf:type rdf:resource="&obo;CDAO_0000073"/>
         <prov:wasGeneratedBy rdf:resource="&annotations_pontelli;APGIIITreeInference"/>
