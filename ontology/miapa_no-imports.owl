@@ -680,6 +680,15 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000041 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000041">
+        <rdfs:label xml:lang="en">MrBayes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/dc/terms/Location -->
 
     <owl:Class rdf:about="&dcterms;Location"/>
@@ -847,6 +856,15 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     <owl:NamedIndividual rdf:about="&obo;MIAPA_0000036">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
         <rdfs:label xml:lang="en">7.2.6, Pthreads-based and SSE3-vectorized</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000042 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000042">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">3.2</rdfs:label>
     </owl:NamedIndividual>
     
 
