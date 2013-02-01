@@ -627,9 +627,9 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&prov;Collection"/>
+                    <rdf:Description rdf:about="&obo;CDAO_0000118"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&prov;hadMember"/>
+                        <owl:onProperty rdf:resource="&obo;CDAO_0000198"/>
                         <owl:allValuesFrom rdf:resource="&obo;CDAO_0000006"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -638,9 +638,9 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;CDAO_0000118"/>
+                    <rdf:Description rdf:about="&prov;Collection"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;CDAO_0000198"/>
+                        <owl:onProperty rdf:resource="&prov;hadMember"/>
                         <owl:allValuesFrom rdf:resource="&obo;CDAO_0000006"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -684,6 +684,15 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
 
     <owl:Class rdf:about="&obo;MIAPA_0000041">
         <rdfs:label xml:lang="en">MrBayes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000044 -->
+
+    <owl:Class rdf:about="&obo;MIAPA_0000044">
+        <rdfs:label xml:lang="en">BEAST</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
     </owl:Class>
     
@@ -865,6 +874,15 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     <owl:NamedIndividual rdf:about="&obo;MIAPA_0000042">
         <rdf:type rdf:resource="&obo;IAO_0000129"/>
         <rdfs:label xml:lang="en">3.2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAPA_0000043 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAPA_0000043">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+        <rdfs:label xml:lang="en">1.5.1</rdfs:label>
     </owl:NamedIndividual>
     
 
