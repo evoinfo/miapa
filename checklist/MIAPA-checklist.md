@@ -48,6 +48,11 @@ The Checklist
 FAQ
 ===
 
+How to cite this document
+-------------------------
+
+*Not sure about this yet.*
+
 Why a checklist
 ---------------
 
