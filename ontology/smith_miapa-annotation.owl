@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
+    <!ENTITY prov "http://www.w3.org/ns/prov#" >
+    <!ENTITY swo2 "http://www.ebi.ac.uk/efo/swo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://phylotastic.org/smith_miapa-annotation.owl#"
+     xml:base="http://phylotastic.org/smith_miapa-annotation.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:swo2="http://www.ebi.ac.uk/efo/swo/"
+     xmlns:swo="http://www.ebi.ac.uk/swo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://phylotastic.org/smith_miapa-annotation.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/miapa.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://phylotastic.org/GTR+CATmodel -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GTR+CATmodel">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000033"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/GTR+GAMMAmodel -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/GTR+GAMMAmodel">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000032"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/RAxML_7.2.6 -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/RAxML_7.2.6">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000016"/>
+        <swo2:SWO_0000740 rdf:resource="http://phylotastic.org/useMaximumLikelihood"/>
+        <swo:SWO_0004000 rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000036"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/RAxML_7.2.7 -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/RAxML_7.2.7">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000016"/>
+        <swo2:SWO_0000740 rdf:resource="http://phylotastic.org/useMaximumLikelihood"/>
+        <swo:SWO_0004000 rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/SmithAlignmentConstruction -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/SmithAlignmentConstruction">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000032"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/SmithConsensusTreeContruction -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/SmithConsensusTreeContruction">
+        <rdf:type rdf:resource="http://edamontology.org/operation_0323"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000003"/>
+        <prov:used rdf:resource="http://phylotastic.org/GTR+CATmodel"/>
+        <prov:used rdf:resource="http://phylotastic.org/GTR+GAMMAmodel"/>
+        <prov:wasAssociatedWith rdf:resource="http://phylotastic.org/RAxML_7.2.7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/SmithInitialTreeInference -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/SmithInitialTreeInference">
+        <rdf:type rdf:resource="http://edamontology.org/operation_0323"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000003"/>
+        <prov:wasAssociatedWith rdf:resource="http://phylotastic.org/RAxML_7.2.6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/SmithMatrixAlignment -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/SmithMatrixAlignment">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000056"/>
+        <prov:wasGeneratedBy rdf:resource="http://phylotastic.org/SmithAlignmentConstruction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/SmithSetOfInitialTrees -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/SmithSetOfInitialTrees">
+        <rdf:type rdf:resource="&prov;Collection"/>
+        <rdfs:comment>This is the collection of trees generated from the initial tree construction instance.</rdfs:comment>
+        <prov:wasGeneratedBy rdf:resource="http://phylotastic.org/SmithInitialTreeInference"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/SmithTree -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/SmithTree">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000012"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000073"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000002"/>
+        <prov:wasGeneratedBy rdf:resource="http://phylotastic.org/SmithConsensusTreeContruction"/>
+        <prov:hadPrimarySource rdf:resource="http://phylotastic.org/SmithSetOfInitialTrees"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/useMaximumLikelihood -->
+
+    <owl:NamedIndividual rdf:about="http://phylotastic.org/useMaximumLikelihood">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MIAPA_0000015"/>
+        <rdfs:label>Maximum Likelihood Algorithm</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
