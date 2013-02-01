@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY edamontology "http://edamontology.org/" >
+    <!ENTITY swo "http://www.ebi.ac.uk/swo/" >
+    <!ENTITY prov "http://www.w3.org/ns/prov#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY Jetz "http://phylotastic.org/hack2/hash/Jetz#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY annotations_pontelli "http://phylotastic.org/annotations_pontelli/" >
+]>
+
+
+<rdf:RDF xmlns="http://phylotastic.org/hack2/hash/Jetz.owl#"
+     xml:base="http://phylotastic.org/hack2/hash/Jetz.owl"
+     xmlns:edamontology="http://edamontology.org/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:annotations_pontelli="http://phylotastic.org/annotations_pontelli/"
+     xmlns:swo="http://www.ebi.ac.uk/swo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:Jetz="http://phylotastic.org/hack2/hash/Jetz#">
+    <owl:Ontology rdf:about="http://phylotastic.org/hack2/hash/Jetz.owl">
+        <owl:imports rdf:resource="&obo;miapa.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/081202 -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;081202">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/1.5.1 -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;1.5.1">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/3.2 -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;3.2">
+        <rdf:type rdf:resource="&obo;IAO_0000129"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/Beast_1_5_1 -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;Beast_1_5_1">
+        <rdf:type rdf:resource="&obo;IAO_0000010"/>
+        <swo:SWO_0004000 rdf:resource="&annotations_pontelli;1.5.1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/JetzAlignment -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;JetzAlignment">
+        <rdf:type rdf:resource="&obo;CDAO_0000056"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/JetzAlignmentIntrons -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;JetzAlignmentIntrons">
+        <rdf:type rdf:resource="&obo;CDAO_0000056"/>
+        <obo:CDAO_0000194 rdf:resource="&annotations_pontelli;JetzAlignment"/>
+        <prov:hadPrimarySource rdf:resource="&annotations_pontelli;JetzAlignmentIntronsPRANK"/>
+        <prov:wasGeneratedBy rdf:resource="&annotations_pontelli;jetzIntronsAlignmentActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/JetzAlignmentIntronsPRANK -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;JetzAlignmentIntronsPRANK">
+        <rdf:type rdf:resource="&obo;CDAO_0000056"/>
+        <prov:wasGeneratedBy rdf:resource="&annotations_pontelli;jetzIntronsPRANKAlignmentActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/JetzAlignmentMitochondrial -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;JetzAlignmentMitochondrial">
+        <rdf:type rdf:resource="&obo;CDAO_0000056"/>
+        <obo:CDAO_0000194 rdf:resource="&annotations_pontelli;JetzAlignment"/>
+        <prov:hadPrimarySource rdf:resource="&annotations_pontelli;JetzAlignmentMitochondrialMAFFT"/>
+        <prov:wasGeneratedBy rdf:resource="&annotations_pontelli;jetzMitochondrialAlignmentActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/JetzAlignmentMitochondrialMAFFT -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;JetzAlignmentMitochondrialMAFFT">
+        <rdf:type rdf:resource="&obo;CDAO_0000056"/>
+        <prov:wasGeneratedBy rdf:resource="&annotations_pontelli;jetzMitochondrialMAFFTAlignmentActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/MAFFT_unknown_version -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;MAFFT_unknown_version">
+        <rdf:type rdf:resource="&obo;MIAPA_0000020"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/MrBayes_3.2 -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;MrBayes_3.2">
+        <rdf:type rdf:resource="&obo;IAO_0000010"/>
+        <swo:SWO_0004000 rdf:resource="&annotations_pontelli;3.2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/PRANK_081202 -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;PRANK_081202">
+        <rdf:type rdf:resource="&obo;MIAPA_0000024"/>
+        <swo:SWO_0004000 rdf:resource="&annotations_pontelli;081202"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/R_Pruning_Script -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;R_Pruning_Script">
+        <rdf:type rdf:resource="&obo;IAO_0000010"/>
+        <rdfs:comment>R script developed by the authors to perform pruning of the backbone tree to a tree with 158 tips</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/jetzBackboneFrameworkTree -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;jetzBackboneFrameworkTree">
+        <rdf:type rdf:resource="&obo;CDAO_0000012"/>
+        <prov:wasDerivedFrom rdf:resource="&annotations_pontelli;jetzBackboneTree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/jetzBackboneFrameworkTreeConstructionActivity -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;jetzBackboneFrameworkTreeConstructionActivity">
+        <rdf:type rdf:resource="&edamontology;operation_0323"/>
+        <rdf:type rdf:resource="&obo;MIAPA_0000003"/>
+        <prov:wasAssociatedWith rdf:resource="&annotations_pontelli;R_Pruning_Script"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/jetzBackboneTree -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;jetzBackboneTree">
+        <rdf:type rdf:resource="&obo;CDAO_0000012"/>
+        <prov:wasDerivedFrom rdf:resource="&annotations_pontelli;JetzAlignment"/>
+        <prov:wasGeneratedBy rdf:resource="&annotations_pontelli;jetzBackboneTreeConstructionActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/jetzBackboneTreeConstructionActivity -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;jetzBackboneTreeConstructionActivity">
+        <rdf:type rdf:resource="&edamontology;operation_0323"/>
+        <rdf:type rdf:resource="&obo;MIAPA_0000003"/>
+        <prov:wasAssociatedWith rdf:resource="&annotations_pontelli;Beast_1_5_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/jetzCladeTrees -->
+
+    <prov:Collection rdf:about="&annotations_pontelli;jetzCladeTrees">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:comment>129 clade trees</rdfs:comment>
+        <prov:wasGeneratedBy rdf:resource="&annotations_pontelli;jetzFinalCladeTreesConstructionActivity"/>
+        <prov:hadPrimarySource rdf:resource="&annotations_pontelli;jetzPreliminaryCladeTrees"/>
+    </prov:Collection>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/jetzCladeTreesConstructionActivity -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;jetzCladeTreesConstructionActivity">
+        <rdf:type rdf:resource="&edamontology;operation_0323"/>
+        <rdf:type rdf:resource="&obo;MIAPA_0000003"/>
+        <prov:wasAssociatedWith rdf:resource="&annotations_pontelli;MrBayes_3.2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/jetzFinalCladeTreesConstructionActivity -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;jetzFinalCladeTreesConstructionActivity">
+        <rdf:type rdf:resource="&edamontology;operation_0323"/>
+        <rdf:type rdf:resource="&obo;MIAPA_0000009"/>
+        <rdfs:comment>As with the initial tree production, we assessed convergence, mixing and burnin by visual examination of plots of the parameters and on the basis of effective sample size</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/jetzFinalTreeConstructionActivity -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;jetzFinalTreeConstructionActivity">
+        <rdf:type rdf:resource="&edamontology;operation_0323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/jetzIntronsAlignmentActivity -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;jetzIntronsAlignmentActivity">
+        <rdf:type rdf:resource="&edamontology;operation_2928"/>
+        <rdf:type rdf:resource="&obo;MIAPA_0000009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/jetzIntronsPRANKAlignmentActivity -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;jetzIntronsPRANKAlignmentActivity">
+        <rdf:type rdf:resource="&edamontology;operation_2928"/>
+        <rdf:type rdf:resource="&obo;MIAPA_0000003"/>
+        <prov:wasAssociatedWith rdf:resource="&annotations_pontelli;PRANK_081202"/>
+        <prov:used rdf:resource="&obo;MIAPA_0000013"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/jetzMitochondrialAlignmentActivity -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;jetzMitochondrialAlignmentActivity">
+        <rdf:type rdf:resource="&edamontology;operation_2928"/>
+        <rdf:type rdf:resource="&obo;MIAPA_0000009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/jetzMitochondrialMAFFTAlignmentActivity -->
+
+    <owl:NamedIndividual rdf:about="&annotations_pontelli;jetzMitochondrialMAFFTAlignmentActivity">
+        <rdf:type rdf:resource="&edamontology;operation_2928"/>
+        <rdf:type rdf:resource="&obo;MIAPA_0000003"/>
+        <prov:wasAssociatedWith rdf:resource="&annotations_pontelli;MAFFT_unknown_version"/>
+        <prov:used rdf:resource="&obo;MIAPA_0000013"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://phylotastic.org/annotations_pontelli/jetzPreliminaryCladeTrees -->
+
+    <prov:Collection rdf:about="&annotations_pontelli;jetzPreliminaryCladeTrees">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <prov:wasGeneratedBy rdf:resource="&annotations_pontelli;jetzFinalCladeTreesConstructionActivity"/>
+    </prov:Collection>
+    
+
+
+    <!-- http://phylotastic.org/hack2/hash/Jetz#jetzTree -->
+
+    <owl:NamedIndividual rdf:about="&Jetz;jetzTree">
+        <rdf:type rdf:resource="&obo;CDAO_0000012"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000073"/>
+        <prov:wasDerivedFrom rdf:resource="&annotations_pontelli;jetzBackboneFrameworkTree"/>
+        <prov:wasDerivedFrom rdf:resource="&annotations_pontelli;jetzCladeTrees"/>
+        <prov:wasGeneratedBy rdf:resource="&annotations_pontelli;jetzFinalTreeConstructionActivity"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

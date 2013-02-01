@@ -1,0 +1,934 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:res="http://purl.org/vocab/resourcelist/schema#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bibo="http://purl.org/ontology/bibo/"
+ xmlns:ctag="http://commontag.org/ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <z:UserItem rdf:about="http://zotero.org/users/local/HWQot3vl/items/94HGXNSZ">
+        <res:resource>
+            <bibo:AcademicArticle>
+                <dcterms:title>The Tree of Life Web Project</dcterms:title>
+                <dcterms:abstract>The Tree of Life Web Project (ToL) provides information on the Internet about our current knowledge of the evolutionary tree of life and associated information about characteristics and diversity of life on Earth. Development of this open-access, database-driven system began in 1994; its official release was in 1996. Core scientific content in the project is compiled collaboratively by more than 540 biologists, all experts in particular groups of organisms, from over 35 countries. Additional learning materials are contributed by over 200 students, teachers, and amateur scientists, while images, movies, and sounds are contributed by both of these groups and over 200 media-only contributors. Administration of the project follows a hierarchical, community-based model, with authors for different parts of the ToL chosen by the scientists working in that particular field. The goals of the project are to document all species on Earth, as well as all significant clades; to provide basic information about the phylogeny of life; to share this information with other databases and analytical tools; and to encourage understanding and appreciation for biodiversity, evolution, and the interrelationships of Earth's wealth of species. Here we provide an outline of the goals and history of the project; the current content, administration, architecture, contributors, and audience, the challenges we have faced, and the future of the project.</dcterms:abstract>
+                <bibo:pages>19-40</bibo:pages>
+                <dcterms:creator rdf:nodeID="n124"/>
+                <bibo:authorList>
+                    <rdf:Seq>
+                        <rdf:li rdf:nodeID="n124"/>
+                        <rdf:li rdf:nodeID="n126"/>
+                        <rdf:li rdf:nodeID="n127"/>
+                    </rdf:Seq>
+                </bibo:authorList>
+                <dcterms:creator rdf:nodeID="n126"/>
+                <dcterms:creator rdf:nodeID="n127"/>
+                <dcterms:isPartOf>
+                    <bibo:Issue>
+                        <bibo:issue>1668</bibo:issue>
+                        <dcterms:date>2007</dcterms:date>
+                        <dcterms:isPartOf>
+                            <bibo:Journal>
+                               <dcterms:title>Zootaxa</dcterms:title>
+                            </bibo:Journal>
+                        </dcterms:isPartOf>
+                    </bibo:Issue>
+                </dcterms:isPartOf>
+            </bibo:AcademicArticle>
+        </res:resource>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>biodiversity</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>data-mining</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>databases</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>dbhack1</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>evolution</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>phylogeny</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>phyloinformatics</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>taxonomy</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+    </z:UserItem>
+    <foaf:Person rdf:nodeID="n124">
+       <foaf:givenname>David</foaf:givenname><foaf:surname>Maddison</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n126">
+        <foaf:givenname>Katja-Sabine</foaf:givenname>
+        <foaf:surname>Schulz</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n127">
+       <foaf:givenname>Wayne</foaf:givenname><foaf:surname>Maddison</foaf:surname>
+    </foaf:Person>
+    <z:UserItem rdf:about="http://zotero.org/users/local/HWQot3vl/items/9MDTBEI6">
+        <res:resource>
+            <bibo:AcademicArticle>
+                <dcterms:title>The delayed rise of present-day mammals</dcterms:title>
+                <dcterms:abstract>Did the end-Cretaceous mass extinction event, by eliminating non-avian dinosaurs and most of the existing fauna, trigger the evolutionary radiation of present-day mammals? Here we construct, date and analyse a species-level phylogeny of nearly all extant Mammalia to bring a new perspective to this question. Our analyses of how extant lineages accumulated through time show that net per-lineage diversification rates barely changed across the Cretaceous/Tertiary boundary. Instead, these rates spiked significantly with the origins of the currently recognized placental superorders and orders approximately 93 million years ago, before falling and remaining low until accelerating again throughout the Eocene and Oligocene epochs. Our results show that the phylogenetic 'fuses' leading to the explosion of extant placental orders are not only very much longer than suspected previously, but also challenge the hypothesis that the end-Cretaceous mass extinction event had a major, direct influence on the diversification of today's mammals.</dcterms:abstract>
+                <bibo:pages>507-12</bibo:pages>
+                <z:extra>Bininda-Emonds, Olaf R P Cardillo, Marcel Jones, Kate E MacPhee, Ross D E Beck, Robin M D Grenyer, Richard Price, Samantha A Vos, Rutger A Gittleman, John L Purvis, Andy England Nature. 2007 Mar 29;446(7135):507-12.</z:extra>
+                <dcterms:creator rdf:nodeID="n142"/>
+                <bibo:authorList>
+                    <rdf:Seq>
+                        <rdf:li rdf:nodeID="n142"/>
+                        <rdf:li rdf:nodeID="n144"/>
+                        <rdf:li rdf:nodeID="n145"/>
+                        <rdf:li rdf:nodeID="n146"/>
+                        <rdf:li rdf:nodeID="n147"/>
+                        <rdf:li rdf:nodeID="n148"/>
+                        <rdf:li rdf:nodeID="n149"/>
+                        <rdf:li rdf:nodeID="n150"/>
+                        <rdf:li rdf:nodeID="n151"/>
+                        <rdf:li rdf:nodeID="n152"/>
+                    </rdf:Seq>
+                </bibo:authorList>
+                <dcterms:creator rdf:nodeID="n144"/>
+                <dcterms:creator rdf:nodeID="n145"/>
+                <dcterms:creator rdf:nodeID="n146"/>
+                <dcterms:creator rdf:nodeID="n147"/>
+                <dcterms:creator rdf:nodeID="n148"/>
+                <dcterms:creator rdf:nodeID="n149"/>
+                <dcterms:creator rdf:nodeID="n150"/>
+                <dcterms:creator rdf:nodeID="n151"/>
+                <dcterms:creator rdf:nodeID="n152"/>
+                <dcterms:isPartOf>
+                    <bibo:Issue>
+                        <bibo:volume>446</bibo:volume>
+                        <bibo:issue>7135</bibo:issue>
+                        <dcterms:date>2007</dcterms:date>
+                        <dcterms:isPartOf>
+                            <bibo:Journal>
+                               <dcterms:title>Nature</dcterms:title>
+                            </bibo:Journal>
+                        </dcterms:isPartOf>
+                    </bibo:Issue>
+                </dcterms:isPartOf>
+            </bibo:AcademicArticle>
+        </res:resource>
+        <ctag:tagged rdf:nodeID="n153"/>
+        <ctag:tagged rdf:nodeID="n154"/>
+        <ctag:tagged rdf:nodeID="n155"/>
+        <ctag:tagged rdf:nodeID="n156"/>
+    </z:UserItem>
+    <foaf:Person rdf:nodeID="n142">
+        <foaf:givenname>O. R.</foaf:givenname>
+        <foaf:surname>Bininda-Emonds</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n144">
+       <foaf:givenname>M.</foaf:givenname><foaf:surname>Cardillo</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n145">
+       <foaf:givenname>K. E.</foaf:givenname><foaf:surname>Jones</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n146">
+       <foaf:givenname>R. D.</foaf:givenname><foaf:surname>MacPhee</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n147">
+       <foaf:givenname>R. M.</foaf:givenname><foaf:surname>Beck</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n148">
+       <foaf:givenname>R.</foaf:givenname><foaf:surname>Grenyer</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n149">
+       <foaf:givenname>S. A.</foaf:givenname><foaf:surname>Price</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n150">
+       <foaf:givenname>R. A.</foaf:givenname><foaf:surname>Vos</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n151">
+        <foaf:givenname>J. L.</foaf:givenname>
+        <foaf:surname>Gittleman</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n152">
+       <foaf:givenname>A.</foaf:givenname><foaf:surname>Purvis</foaf:surname>
+    </foaf:Person>
+    <ctag:UserTag rdf:nodeID="n153">
+        <ctag:label>Ancient Mammals/*classification/genetics/*physiology Models</ctag:label>
+    </ctag:UserTag>
+    <ctag:UserTag rdf:nodeID="n154">
+        <ctag:label>Animals *Biological Evolution Dinosaurs/classification/physiology Extinction</ctag:label>
+    </ctag:UserTag>
+    <ctag:UserTag rdf:nodeID="n155">
+       <ctag:label>Biological Fossils Genetic Speciation History</ctag:label>
+    </ctag:UserTag>
+    <ctag:UserTag rdf:nodeID="n156">
+       <ctag:label>Biological Phylogeny Time Factors</ctag:label>
+    </ctag:UserTag>
+    <z:UserItem rdf:about="http://zotero.org/users/local/HWQot3vl/items/ABCD2345">
+       <res:resource rdf:resource="http://zotero.org/support/quick_start_guide"/>
+    </z:UserItem>
+    <bibo:Webpage rdf:about="http://zotero.org/support/quick_start_guide">
+        <dcterms:title>Zotero Quick Start Guide</dcterms:title>
+        <bibo:uri>http://zotero.org/support/quick_start_guide</bibo:uri>
+        <dcterms:creator rdf:nodeID="n160"/>
+        <bibo:authorList>
+           <rdf:Seq><rdf:li rdf:nodeID="n160"/></rdf:Seq>
+        </bibo:authorList>
+    </bibo:Webpage>
+    <foaf:Organization rdf:nodeID="n160">
+       <foaf:name>Center for History and New Media</foaf:name>
+    </foaf:Organization>
+    <z:UserItem rdf:about="http://zotero.org/users/local/HWQot3vl/items/CFVI49D5">
+        <res:resource>
+            <bibo:AcademicArticle>
+                <dcterms:title>Phylogenetic analysis of 73 060 taxa corroborates major eukaryotic groups</dcterms:title>
+                <dcterms:abstract>Obtaining a well supported schema of phylogenetic relationships among the major groups of living organisms requires considering as much taxonomic diversity as possible, but the computational cost of calculating large phylogenies has so far been a major obstacle. We show here that the parsimony algorithms implemented in TNT can successfully process the largest phylogenetic data set ever analysed, consisting of molecular sequences and morphology for 73 060 eukaryotic taxa. The trees resulting from molecules alone display a high degree of congruence with the major taxonomic groups, with a small proportion of misplaced species; the combined data set retrieves these groups with even higher congruence. This shows that tree-calculation algorithms effectively retrieve phylogenetic history for very large data sets, and at the same time provides strong corroboration for the major eukaryotic lineages long recognized by taxonomists.</dcterms:abstract>
+                <bibo:pages>211-230</bibo:pages>
+                <dcterms:creator rdf:nodeID="n168"/>
+                <bibo:authorList>
+                    <rdf:Seq>
+                        <rdf:li rdf:nodeID="n168"/>
+                        <rdf:li rdf:nodeID="n170"/>
+                        <rdf:li rdf:nodeID="n171"/>
+                        <rdf:li rdf:nodeID="n172"/>
+                        <rdf:li rdf:nodeID="n173"/>
+                        <rdf:li rdf:nodeID="n174"/>
+                        <rdf:li rdf:nodeID="n175"/>
+                    </rdf:Seq>
+                </bibo:authorList>
+                <dcterms:creator rdf:nodeID="n170"/>
+                <dcterms:creator rdf:nodeID="n171"/>
+                <dcterms:creator rdf:nodeID="n172"/>
+                <dcterms:creator rdf:nodeID="n173"/>
+                <dcterms:creator rdf:nodeID="n174"/>
+                <dcterms:creator rdf:nodeID="n175"/>
+                <dcterms:isPartOf>
+                    <bibo:Issue>
+                        <bibo:volume>25</bibo:volume>
+                        <bibo:issue>3</bibo:issue>
+                        <dcterms:date>2009</dcterms:date>
+                        <dcterms:isPartOf>
+                            <bibo:Journal>
+                               <dcterms:title>Cladistics</dcterms:title>
+                            </bibo:Journal>
+                        </dcterms:isPartOf>
+                    </bibo:Issue>
+                </dcterms:isPartOf>
+            </bibo:AcademicArticle>
+        </res:resource>
+    </z:UserItem>
+    <foaf:Person rdf:nodeID="n168">
+        <foaf:givenname>Pablo A.</foaf:givenname>
+        <foaf:surname>Goloboff</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n170">
+        <foaf:givenname>Santiago A.</foaf:givenname>
+        <foaf:surname>Catalano</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n171">
+        <foaf:givenname>J.</foaf:givenname>
+        <foaf:surname>Marcos Mirande</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n172">
+        <foaf:givenname>Claudia A.</foaf:givenname>
+        <foaf:surname>Szumik</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n173">
+        <foaf:givenname>J.</foaf:givenname>
+        <foaf:surname>Salvador Arias</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n174">
+       <foaf:givenname>Mari</foaf:givenname><foaf:surname>Källersjö</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n175">
+        <foaf:givenname>James S.</foaf:givenname>
+        <foaf:surname>Farris</foaf:surname>
+    </foaf:Person>
+    <z:UserItem rdf:about="http://zotero.org/users/local/HWQot3vl/items/I5RSP9RH">
+        <res:resource>
+            <bibo:AcademicArticle>
+                <dcterms:title>The All-Species Living Tree project: a 16S rRNA-based phylogenetic tree of all sequenced type strains</dcterms:title>
+                <dcterms:abstract>The signing authors together with the journal Systematic and Applied Microbiology (SAM) have started an ambitious project that has been conceived to provide a useful tool especially for the scientific microbial taxonomist community. The aim of what we have called &quot;The All-Species Living Tree&quot; is to reconstruct a single 16S rRNA tree harboring all sequenced type strains of the hitherto classified species of Archaea and Bacteria. This tree is to be regularly updated by adding the species with validly published names that appear monthly in the Validation and Notification lists of the International Journal of Systematic and Evolutionary Microbiology. For this purpose, the SAM executive editors, together with the responsible teams of the ARB, SILVA, and LPSN projects (www.arb-home.de, www.arb-silva.de, and www.bacterio.cict.fr, respectively), have prepared a 16S rRNA database containing over 6700 sequences, each of which represents a single type strain of a classified species up to 31 December 2007. The selection of sequences had to be undertaken manually due to a high error rate in the names and information fields provided for the publicly deposited entries. In addition, from among the often occurring multiple entries for a single type strain, the best-quality sequence was selected for the project. The living tree database that SAM now provides contains corrected entries and the best-quality sequences with a manually checked alignment. The tree reconstruction has been performed by using the maximum likelihood algorithm RAxML. The tree provided in the first release is a result of the calculation of a single dataset containing 9975 single entries, 6728 corresponding to type strain gene sequences, as well as 3247 additional high-fquality sequences to give robustness to the reconstruction. Trees are dynamic structures that change on the basis of the quality and availability of the data used for their calculation. Therefore, the addition of new type strain sequences in further subsequent releases may help to resolve certain branching orders that appear ambiguous in this first release. On the web sites: www.elsevier.de/syapm and www.arb-silva.de/living-tree, the All-Species Living Tree team will release a regularly updated database compatible with the ARB software environment containing the whole 16S rRNA dataset used to reconstruct &quot;The All-Species Living Tree&quot;. As a result, the latest reconstructed phylogeny will be provided. In addition to the ARB file, a readable multi-FASTA universal sequence editor file with the complete alignment will be provided for those not using ARB. There is also a complete set of supplementary tables and figures illustrating the selection procedure and its outcome. It is expected that the All-Species Living Tree will help to improve future classification efforts by simplifying the selection of the correct type strain sequences. For queries, information updates, remarks on the dataset or tree reconstructions shown, a contact email address has been created (living-tree@arb-silva.de). This provides an entry point for anyone from the scientific community to provide additional input for the construction and improvement of the first tree compiling all sequenced type strains of all prokaryotic species for which names had been validly published.</dcterms:abstract>
+                <bibo:pages>241-50</bibo:pages>
+                <z:extra>Yarza, Pablo Richter, Michael Peplies, Jorg Euzeby, Jean Amann, Rudolf Schleifer, Karl-Heinz Ludwig, Wolfgang Glockner, Frank Oliver Rossello-Mora, Ramon Germany Syst Appl Microbiol. 2008 Sep;31(4):241-50. doi: 10.1016/j.syapm.2008.07.001. Epub 2008 Aug 9.</z:extra>
+                <dcterms:creator rdf:nodeID="n182"/>
+                <bibo:authorList>
+                    <rdf:Seq>
+                        <rdf:li rdf:nodeID="n182"/>
+                        <rdf:li rdf:nodeID="n184"/>
+                        <rdf:li rdf:nodeID="n185"/>
+                        <rdf:li rdf:nodeID="n186"/>
+                        <rdf:li rdf:nodeID="n187"/>
+                        <rdf:li rdf:nodeID="n188"/>
+                        <rdf:li rdf:nodeID="n189"/>
+                        <rdf:li rdf:nodeID="n190"/>
+                        <rdf:li rdf:nodeID="n191"/>
+                    </rdf:Seq>
+                </bibo:authorList>
+                <dcterms:creator rdf:nodeID="n184"/>
+                <dcterms:creator rdf:nodeID="n185"/>
+                <dcterms:creator rdf:nodeID="n186"/>
+                <dcterms:creator rdf:nodeID="n187"/>
+                <dcterms:creator rdf:nodeID="n188"/>
+                <dcterms:creator rdf:nodeID="n189"/>
+                <dcterms:creator rdf:nodeID="n190"/>
+                <dcterms:creator rdf:nodeID="n191"/>
+                <dcterms:isPartOf>
+                    <bibo:Issue>
+                        <bibo:volume>31</bibo:volume>
+                        <bibo:issue>4</bibo:issue>
+                        <dcterms:date>2008</dcterms:date>
+                        <dcterms:isPartOf>
+                            <bibo:Journal>
+                                <dcterms:title>Systematic and applied microbiology</dcterms:title>
+                            </bibo:Journal>
+                        </dcterms:isPartOf>
+                    </bibo:Issue>
+                </dcterms:isPartOf>
+            </bibo:AcademicArticle>
+        </res:resource>
+        <ctag:tagged>
+            <ctag:UserTag>
+                <ctag:label>16S/*genetics Ribotyping Sequence Alignment Sequence Analysis</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+            <ctag:UserTag>
+                <ctag:label>Archaea/*classification/genetics Bacteria/*classification/genetics Computational Biology *Databases</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+            <ctag:UserTag>
+               <ctag:label>Archaeal/genetics RNA</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+            <ctag:UserTag>
+               <ctag:label>Bacterial/genetics RNA</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+            <ctag:UserTag>
+               <ctag:label>Nucleic Acid Internet *Phylogeny RNA</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>Ribosomal</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>RNA</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+    </z:UserItem>
+    <foaf:Person rdf:nodeID="n182">
+       <foaf:givenname>P.</foaf:givenname><foaf:surname>Yarza</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n184">
+       <foaf:givenname>M.</foaf:givenname><foaf:surname>Richter</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n185">
+       <foaf:givenname>J.</foaf:givenname><foaf:surname>Peplies</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n186">
+       <foaf:givenname>J.</foaf:givenname><foaf:surname>Euzeby</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n187">
+       <foaf:givenname>R.</foaf:givenname><foaf:surname>Amann</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n188">
+        <foaf:givenname>K. H.</foaf:givenname>
+        <foaf:surname>Schleifer</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n189">
+       <foaf:givenname>W.</foaf:givenname><foaf:surname>Ludwig</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n190">
+       <foaf:givenname>F. O.</foaf:givenname><foaf:surname>Glockner</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n191">
+        <foaf:givenname>R.</foaf:givenname>
+        <foaf:surname>Rossello-Mora</foaf:surname>
+    </foaf:Person>
+    <z:UserItem rdf:about="http://zotero.org/users/local/HWQot3vl/items/JZP6DGI2">
+        <res:resource>
+            <bibo:AcademicArticle>
+                <dcterms:title>An update of the Angiosperm Phylogeny Group classification for the orders and families of flowering plants: APG III</dcterms:title>
+                <bibo:pages>105-121</bibo:pages>
+                <dcterms:creator rdf:nodeID="n205"/>
+                <bibo:authorList>
+                   <rdf:Seq><rdf:li rdf:nodeID="n205"/></rdf:Seq>
+                </bibo:authorList>
+                <dcterms:isPartOf>
+                    <bibo:Issue>
+                        <bibo:volume>161</bibo:volume>
+                        <bibo:issue>2</bibo:issue>
+                        <dcterms:date>2009</dcterms:date>
+                        <dcterms:isPartOf>
+                            <bibo:Journal>
+                                <dcterms:title>Botanical Journal of the Linnean Society</dcterms:title>
+                            </bibo:Journal>
+                        </dcterms:isPartOf>
+                    </bibo:Issue>
+                </dcterms:isPartOf>
+            </bibo:AcademicArticle>
+        </res:resource>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>angiosperm</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>APG</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>classification</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>DNA</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>phylogenetic</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>phylogenetics</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>system</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+    </z:UserItem>
+    <foaf:Person rdf:nodeID="n205">
+        <foaf:givenname>Group</foaf:givenname>
+        <foaf:surname>The Angiosperm Phylogeny</foaf:surname>
+    </foaf:Person>
+    <z:UserItem rdf:about="http://zotero.org/users/local/HWQot3vl/items/QH5K6PUT">
+        <res:resource>
+            <bibo:AcademicArticle>
+                <dcterms:title>A phylogeny-driven genomic encyclopaedia of Bacteria and Archaea</dcterms:title>
+                <dcterms:abstract>Sequencing of bacterial and archaeal genomes has revolutionized our understanding of the many roles played by microorganisms. There are now nearly 1,000 completed bacterial and archaeal genomes available, most of which were chosen for sequencing on the basis of their physiology. As a result, the perspective provided by the currently available genomes is limited by a highly biased phylogenetic distribution. To explore the value added by choosing microbial genomes for sequencing on the basis of their evolutionary relationships, we have sequenced and analysed the genomes of 56 culturable species of Bacteria and Archaea selected to maximize phylogenetic coverage. Analysis of these genomes demonstrated pronounced benefits (compared to an equivalent set of genomes randomly selected from the existing database) in diverse areas including the reconstruction of phylogenetic history, the discovery of new protein families and biological properties, and the prediction of functions for known genes from other organisms. Our results strongly support the need for systematic 'phylogenomic' efforts to compile a phylogeny-driven 'Genomic Encyclopedia of Bacteria and Archaea' in order to derive maximum knowledge from existing microbial genome data as well as from genome sequences to come.</dcterms:abstract>
+                <bibo:pages>1056-60</bibo:pages>
+                <z:extra>Wu, Dongying Hugenholtz, Philip Mavromatis, Konstantinos Pukall, Rudiger Dalin, Eileen Ivanova, Natalia N Kunin, Victor Goodwin, Lynne Wu, Martin Tindall, Brian J Hooper, Sean D Pati, Amrita Lykidis, Athanasios Spring, Stefan Anderson, Iain J D'haeseleer, Patrik Zemla, Adam Singer, Mitchell Lapidus, Alla Nolan, Matt Copeland, Alex Han, Cliff Chen, Feng Cheng, Jan-Fang Lucas, Susan Kerfeld, Cheryl Lang, Elke Gronow, Sabine Chain, Patrick Bruce, David Rubin, Edward M Kyrpides, Nikos C Klenk, Hans-Peter Eisen, Jonathan A Research Support, Non-U.S. Gov't Research Support, U.S. Gov't, Non-P.H.S. England Nature Nature. 2009 Dec 24;462(7276):1056-60.</z:extra>
+                <dcterms:creator rdf:nodeID="n220"/>
+                <bibo:authorList>
+                    <rdf:Seq>
+                        <rdf:li rdf:nodeID="n220"/>
+                        <rdf:li rdf:nodeID="n222"/>
+                        <rdf:li rdf:nodeID="n223"/>
+                        <rdf:li rdf:nodeID="n224"/>
+                        <rdf:li rdf:nodeID="n225"/>
+                        <rdf:li rdf:nodeID="n226"/>
+                        <rdf:li rdf:nodeID="n227"/>
+                        <rdf:li rdf:nodeID="n228"/>
+                        <rdf:li rdf:nodeID="n229"/>
+                        <rdf:li rdf:nodeID="n230"/>
+                        <rdf:li rdf:nodeID="n231"/>
+                        <rdf:li rdf:nodeID="n232"/>
+                        <rdf:li rdf:nodeID="n233"/>
+                        <rdf:li rdf:nodeID="n234"/>
+                        <rdf:li rdf:nodeID="n235"/>
+                        <rdf:li rdf:nodeID="n236"/>
+                        <rdf:li rdf:nodeID="n237"/>
+                        <rdf:li rdf:nodeID="n238"/>
+                        <rdf:li rdf:nodeID="n239"/>
+                        <rdf:li rdf:nodeID="n240"/>
+                        <rdf:li rdf:nodeID="n241"/>
+                        <rdf:li rdf:nodeID="n242"/>
+                        <rdf:li rdf:nodeID="n243"/>
+                        <rdf:li rdf:nodeID="n244"/>
+                        <rdf:li rdf:nodeID="n245"/>
+                        <rdf:li rdf:nodeID="n246"/>
+                        <rdf:li rdf:nodeID="n247"/>
+                        <rdf:li rdf:nodeID="n248"/>
+                        <rdf:li rdf:nodeID="n249"/>
+                        <rdf:li rdf:nodeID="n250"/>
+                        <rdf:li rdf:nodeID="n251"/>
+                        <rdf:li rdf:nodeID="n252"/>
+                        <rdf:li rdf:nodeID="n253"/>
+                        <rdf:li rdf:nodeID="n254"/>
+                    </rdf:Seq>
+                </bibo:authorList>
+                <dcterms:creator rdf:nodeID="n222"/>
+                <dcterms:creator rdf:nodeID="n223"/>
+                <dcterms:creator rdf:nodeID="n224"/>
+                <dcterms:creator rdf:nodeID="n225"/>
+                <dcterms:creator rdf:nodeID="n226"/>
+                <dcterms:creator rdf:nodeID="n227"/>
+                <dcterms:creator rdf:nodeID="n228"/>
+                <dcterms:creator rdf:nodeID="n229"/>
+                <dcterms:creator rdf:nodeID="n230"/>
+                <dcterms:creator rdf:nodeID="n231"/>
+                <dcterms:creator rdf:nodeID="n232"/>
+                <dcterms:creator rdf:nodeID="n233"/>
+                <dcterms:creator rdf:nodeID="n234"/>
+                <dcterms:creator rdf:nodeID="n235"/>
+                <dcterms:creator rdf:nodeID="n236"/>
+                <dcterms:creator rdf:nodeID="n237"/>
+                <dcterms:creator rdf:nodeID="n238"/>
+                <dcterms:creator rdf:nodeID="n239"/>
+                <dcterms:creator rdf:nodeID="n240"/>
+                <dcterms:creator rdf:nodeID="n241"/>
+                <dcterms:creator rdf:nodeID="n242"/>
+                <dcterms:creator rdf:nodeID="n243"/>
+                <dcterms:creator rdf:nodeID="n244"/>
+                <dcterms:creator rdf:nodeID="n245"/>
+                <dcterms:creator rdf:nodeID="n246"/>
+                <dcterms:creator rdf:nodeID="n247"/>
+                <dcterms:creator rdf:nodeID="n248"/>
+                <dcterms:creator rdf:nodeID="n249"/>
+                <dcterms:creator rdf:nodeID="n250"/>
+                <dcterms:creator rdf:nodeID="n251"/>
+                <dcterms:creator rdf:nodeID="n252"/>
+                <dcterms:creator rdf:nodeID="n253"/>
+                <dcterms:creator rdf:nodeID="n254"/>
+                <dcterms:isPartOf>
+                    <bibo:Issue>
+                        <bibo:volume>462</bibo:volume>
+                        <bibo:issue>7276</bibo:issue>
+                        <dcterms:date>2009</dcterms:date>
+                        <dcterms:isPartOf>
+                            <bibo:Journal>
+                               <dcterms:title>Nature</dcterms:title>
+                            </bibo:Journal>
+                        </dcterms:isPartOf>
+                    </bibo:Issue>
+                </dcterms:isPartOf>
+            </bibo:AcademicArticle>
+        </res:resource>
+        <ctag:tagged>
+            <ctag:UserTag>
+                <ctag:label>Actins/chemistry Amino Acid Sequence Archaea/*classification/*genetics Bacteria/*classification/*genetics Bacterial Proteins/chemistry Biodiversity Databases</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+            <ctag:UserTag>
+               <ctag:label>Archaeal/*genetics Genome</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+            <ctag:UserTag>
+               <ctag:label>Bacterial/*genetics Models</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>Genetic Genes</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+            <ctag:UserTag>
+                <ctag:label>Molecular Molecular Sequence Data *Phylogeny Protein Structure</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+            <ctag:UserTag>
+               <ctag:label>rRNA/genetics Genome</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+            <ctag:UserTag>
+               <ctag:label>Tertiary Sequence Alignment</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+    </z:UserItem>
+    <foaf:Person rdf:nodeID="n220">
+       <foaf:givenname>D.</foaf:givenname><foaf:surname>Wu</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n222">
+       <foaf:givenname>P.</foaf:givenname><foaf:surname>Hugenholtz</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n223">
+       <foaf:givenname>K.</foaf:givenname><foaf:surname>Mavromatis</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n224">
+       <foaf:givenname>R.</foaf:givenname><foaf:surname>Pukall</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n225">
+       <foaf:givenname>E.</foaf:givenname><foaf:surname>Dalin</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n226">
+       <foaf:givenname>N. N.</foaf:givenname><foaf:surname>Ivanova</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n227">
+       <foaf:givenname>V.</foaf:givenname><foaf:surname>Kunin</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n228">
+       <foaf:givenname>L.</foaf:givenname><foaf:surname>Goodwin</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n229">
+       <foaf:givenname>M.</foaf:givenname><foaf:surname>Wu</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n230">
+       <foaf:givenname>B. J.</foaf:givenname><foaf:surname>Tindall</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n231">
+       <foaf:givenname>S. D.</foaf:givenname><foaf:surname>Hooper</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n232">
+       <foaf:givenname>A.</foaf:givenname><foaf:surname>Pati</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n233">
+       <foaf:givenname>A.</foaf:givenname><foaf:surname>Lykidis</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n234">
+       <foaf:givenname>S.</foaf:givenname><foaf:surname>Spring</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n235">
+       <foaf:givenname>I. J.</foaf:givenname><foaf:surname>Anderson</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n236">
+       <foaf:givenname>P.</foaf:givenname><foaf:surname>D'Haeseleer</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n237">
+       <foaf:givenname>A.</foaf:givenname><foaf:surname>Zemla</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n238">
+       <foaf:givenname>M.</foaf:givenname><foaf:surname>Singer</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n239">
+       <foaf:givenname>A.</foaf:givenname><foaf:surname>Lapidus</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n240">
+       <foaf:givenname>M.</foaf:givenname><foaf:surname>Nolan</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n241">
+       <foaf:givenname>A.</foaf:givenname><foaf:surname>Copeland</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n242">
+       <foaf:givenname>C.</foaf:givenname><foaf:surname>Han</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n243">
+       <foaf:givenname>F.</foaf:givenname><foaf:surname>Chen</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n244">
+       <foaf:givenname>J. F.</foaf:givenname><foaf:surname>Cheng</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n245">
+       <foaf:givenname>S.</foaf:givenname><foaf:surname>Lucas</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n246">
+       <foaf:givenname>C.</foaf:givenname><foaf:surname>Kerfeld</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n247">
+       <foaf:givenname>E.</foaf:givenname><foaf:surname>Lang</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n248">
+       <foaf:givenname>S.</foaf:givenname><foaf:surname>Gronow</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n249">
+       <foaf:givenname>P.</foaf:givenname><foaf:surname>Chain</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n250">
+       <foaf:givenname>D.</foaf:givenname><foaf:surname>Bruce</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n251">
+       <foaf:givenname>E. M.</foaf:givenname><foaf:surname>Rubin</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n252">
+       <foaf:givenname>N. C.</foaf:givenname><foaf:surname>Kyrpides</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n253">
+       <foaf:givenname>H. P.</foaf:givenname><foaf:surname>Klenk</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n254">
+       <foaf:givenname>J. A.</foaf:givenname><foaf:surname>Eisen</foaf:surname>
+    </foaf:Person>
+    <z:UserItem rdf:about="http://zotero.org/users/local/HWQot3vl/items/R43PKPK3">
+        <res:resource>
+            <bibo:AcademicArticle>
+                <dcterms:title>Understanding angiosperm diversification using small and large phylogenetic trees</dcterms:title>
+                <dcterms:abstract>How will the emerging possibility of inferring ultra-large phylogenies influence our ability to identify shifts in diversification rate? For several large angiosperm clades (Angiospermae, Monocotyledonae, Orchidaceae, Poaceae, Eudicotyledonae, Fabaceae, and Asteraceae), we explore this issue by contrasting two approaches: (1) using small backbone trees with an inferred number of extant species assigned to each terminal clade and (2) using a mega-phylogeny of 55473 seed plant species represented in GenBank. The mega-phylogeny approach assumes that the sample of species in GenBank is at least roughly proportional to the actual species diversity of different lineages, as appears to be the case for many major angiosperm lineages. Using both approaches, we found that diversification rate shifts are not directly associated with the major named clades examined here, with the sole exception of Fabaceae in the GenBank mega-phylogeny. These agreements are encouraging and may support a generality about angiosperm evolution: major shifts in diversification may not be directly associated with major named clades, but rather with clades that are nested not far within these groups. An alternative explanation is that there have been increased extinction rates in early-diverging lineages within these clades. Based on our mega-phylogeny, the shifts in diversification appear to be distributed quite evenly throughout the angiosperms. Mega-phylogenetic studies of diversification hold great promise for revealing new patterns, but we will need to focus more attention on properly specifying null expectation.</dcterms:abstract>
+                <bibo:pages>404-14</bibo:pages>
+                <z:extra>Journal Article United States</z:extra>
+                <dcterms:creator rdf:nodeID="n268"/>
+                <bibo:authorList>
+                    <rdf:Seq>
+                        <rdf:li rdf:nodeID="n268"/>
+                        <rdf:li rdf:nodeID="n270"/>
+                        <rdf:li rdf:nodeID="n271"/>
+                        <rdf:li rdf:nodeID="n272"/>
+                    </rdf:Seq>
+                </bibo:authorList>
+                <dcterms:creator rdf:nodeID="n270"/>
+                <dcterms:creator rdf:nodeID="n271"/>
+                <dcterms:creator rdf:nodeID="n272"/>
+                <dcterms:isPartOf>
+                    <bibo:Issue>
+                        <bibo:volume>98</bibo:volume>
+                        <bibo:issue>3</bibo:issue>
+                        <dcterms:date>2011</dcterms:date>
+                        <dcterms:isPartOf>
+                            <bibo:Journal>
+                               <dcterms:title>Am J Bot</dcterms:title>
+                            </bibo:Journal>
+                        </dcterms:isPartOf>
+                    </bibo:Issue>
+                </dcterms:isPartOf>
+            </bibo:AcademicArticle>
+        </res:resource>
+    </z:UserItem>
+    <foaf:Person rdf:nodeID="n268">
+       <foaf:givenname>S. A.</foaf:givenname><foaf:surname>Smith</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n270">
+       <foaf:givenname>J. M.</foaf:givenname><foaf:surname>Beaulieu</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n271">
+       <foaf:givenname>A.</foaf:givenname><foaf:surname>Stamatakis</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n272">
+       <foaf:givenname>M. J.</foaf:givenname><foaf:surname>Donoghue</foaf:surname>
+    </foaf:Person>
+    <z:UserItem rdf:about="http://zotero.org/users/local/HWQot3vl/items/RPID93UF">
+        <res:resource>
+            <bibo:AcademicArticle>
+                <dcterms:title>The delayed rise of present-day mammals</dcterms:title>
+                <dcterms:abstract>Did the end-Cretaceous mass extinction event, by eliminating non-avian dinosaurs and most of the existing fauna, trigger the evolutionary radiation of present-day mammals? Here we construct, date and analyse a species-level phylogeny of nearly all extant Mammalia to bring a new perspective to this question. Our analyses of how extant lineages accumulated through time show that net per-lineage diversification rates barely changed across the Cretaceous/Tertiary boundary. Instead, these rates spiked significantly with the origins of the currently recognized placental superorders and orders approximately 93 million years ago, before falling and remaining low until accelerating again throughout the Eocene and Oligocene epochs. Our results show that the phylogenetic 'fuses' leading to the explosion of extant placental orders are not only very much longer than suspected previously, but also challenge the hypothesis that the end-Cretaceous mass extinction event had a major, direct influence on the diversification of today's mammals.</dcterms:abstract>
+                <bibo:pages>507-12</bibo:pages>
+                <z:extra>Bininda-Emonds, Olaf R P Cardillo, Marcel Jones, Kate E MacPhee, Ross D E Beck, Robin M D Grenyer, Richard Price, Samantha A Vos, Rutger A Gittleman, John L Purvis, Andy England Nature. 2007 Mar 29;446(7135):507-12.</z:extra>
+                <dcterms:creator rdf:nodeID="n279"/>
+                <bibo:authorList>
+                    <rdf:Seq>
+                        <rdf:li rdf:nodeID="n279"/>
+                        <rdf:li rdf:nodeID="n281"/>
+                        <rdf:li rdf:nodeID="n282"/>
+                        <rdf:li rdf:nodeID="n283"/>
+                        <rdf:li rdf:nodeID="n284"/>
+                        <rdf:li rdf:nodeID="n285"/>
+                        <rdf:li rdf:nodeID="n286"/>
+                        <rdf:li rdf:nodeID="n287"/>
+                        <rdf:li rdf:nodeID="n288"/>
+                        <rdf:li rdf:nodeID="n289"/>
+                    </rdf:Seq>
+                </bibo:authorList>
+                <dcterms:creator rdf:nodeID="n281"/>
+                <dcterms:creator rdf:nodeID="n282"/>
+                <dcterms:creator rdf:nodeID="n283"/>
+                <dcterms:creator rdf:nodeID="n284"/>
+                <dcterms:creator rdf:nodeID="n285"/>
+                <dcterms:creator rdf:nodeID="n286"/>
+                <dcterms:creator rdf:nodeID="n287"/>
+                <dcterms:creator rdf:nodeID="n288"/>
+                <dcterms:creator rdf:nodeID="n289"/>
+                <dcterms:isPartOf>
+                    <bibo:Issue>
+                        <bibo:volume>446</bibo:volume>
+                        <bibo:issue>7135</bibo:issue>
+                        <dcterms:date>2007</dcterms:date>
+                        <dcterms:isPartOf>
+                            <bibo:Journal>
+                               <dcterms:title>Nature</dcterms:title>
+                            </bibo:Journal>
+                        </dcterms:isPartOf>
+                    </bibo:Issue>
+                </dcterms:isPartOf>
+            </bibo:AcademicArticle>
+        </res:resource>
+        <ctag:tagged rdf:nodeID="n153"/>
+        <ctag:tagged rdf:nodeID="n154"/>
+        <ctag:tagged rdf:nodeID="n155"/>
+        <ctag:tagged rdf:nodeID="n156"/>
+    </z:UserItem>
+    <foaf:Person rdf:nodeID="n279">
+        <foaf:givenname>O. R.</foaf:givenname>
+        <foaf:surname>Bininda-Emonds</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n281">
+       <foaf:givenname>M.</foaf:givenname><foaf:surname>Cardillo</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n282">
+       <foaf:givenname>K. E.</foaf:givenname><foaf:surname>Jones</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n283">
+       <foaf:givenname>R. D.</foaf:givenname><foaf:surname>MacPhee</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n284">
+       <foaf:givenname>R. M.</foaf:givenname><foaf:surname>Beck</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n285">
+       <foaf:givenname>R.</foaf:givenname><foaf:surname>Grenyer</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n286">
+       <foaf:givenname>S. A.</foaf:givenname><foaf:surname>Price</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n287">
+       <foaf:givenname>R. A.</foaf:givenname><foaf:surname>Vos</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n288">
+        <foaf:givenname>J. L.</foaf:givenname>
+        <foaf:surname>Gittleman</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n289">
+       <foaf:givenname>A.</foaf:givenname><foaf:surname>Purvis</foaf:surname>
+    </foaf:Person>
+    <z:UserItem rdf:about="http://zotero.org/users/local/HWQot3vl/items/S2RTIJIR">
+        <res:resource>
+            <bibo:AcademicArticle>
+                <dcterms:title>The global diversity of birds in space and time</dcterms:title>
+                <dcterms:abstract>Current global patterns of biodiversity result from processes that operate over both space and time and thus require an integrated macroecological and macroevolutionary perspective. Molecular time trees have advanced our understanding of the tempo and mode of diversification and have identified remarkable adaptive radiations across the tree of life. However, incomplete joint phylogenetic and geographic sampling has limited broad-scale inference. Thus, the relative prevalence of rapid radiations and the importance of their geographic settings in shaping global biodiversity patterns remain unclear. Here we present, analyse and map the first complete dated phylogeny of all 9,993 extant species of birds, a widely studied group showing many unique adaptations. We find that birds have undergone a strong increase in diversification rate from about 50 million years ago to the near present. This acceleration is due to a number of significant rate increases, both within songbirds and within other young and mostly temperate radiations including the waterfowl, gulls and woodpeckers. Importantly, species characterized with very high past diversification rates are interspersed throughout the avian tree and across geographic space. Geographically, the major differences in diversification rates are hemispheric rather than latitudinal, with bird assemblages in Asia, North America and southern South America containing a disproportionate number of species from recent rapid radiations. The contribution of rapidly radiating lineages to both temporal diversification dynamics and spatial distributions of species diversity illustrates the benefits of an inclusive geographical and taxonomical perspective. Overall, whereas constituent clades may exhibit slowdowns, the adaptive zone into which modern birds have diversified since the Cretaceous may still offer opportunities for diversification.</dcterms:abstract>
+                <bibo:pages>444-8</bibo:pages>
+                <z:extra>Jetz, W Thomas, G H Joy, J B Hartmann, K Mooers, A O England Nature. 2012 Nov 15;491(7424):444-8. doi: 10.1038/nature11631. Epub 2012 Oct 31.</z:extra>
+                <dcterms:creator rdf:nodeID="n296"/>
+                <bibo:authorList>
+                    <rdf:Seq>
+                        <rdf:li rdf:nodeID="n296"/>
+                        <rdf:li rdf:nodeID="n298"/>
+                        <rdf:li rdf:nodeID="n299"/>
+                        <rdf:li rdf:nodeID="n300"/>
+                        <rdf:li rdf:nodeID="n301"/>
+                    </rdf:Seq>
+                </bibo:authorList>
+                <dcterms:creator rdf:nodeID="n298"/>
+                <dcterms:creator rdf:nodeID="n299"/>
+                <dcterms:creator rdf:nodeID="n300"/>
+                <dcterms:creator rdf:nodeID="n301"/>
+                <dcterms:isPartOf>
+                    <bibo:Issue>
+                        <bibo:volume>491</bibo:volume>
+                        <bibo:issue>7424</bibo:issue>
+                        <dcterms:date>2012</dcterms:date>
+                        <dcterms:isPartOf>
+                            <bibo:Journal>
+                               <dcterms:title>Nature</dcterms:title>
+                            </bibo:Journal>
+                        </dcterms:isPartOf>
+                    </bibo:Issue>
+                </dcterms:isPartOf>
+            </bibo:AcademicArticle>
+        </res:resource>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>*Biodiversity</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>*Phylogeny</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>Animals</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+            <ctag:UserTag>
+               <ctag:label>Birds/*classification/genetics/physiology</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+    </z:UserItem>
+    <foaf:Person rdf:nodeID="n296">
+       <foaf:givenname>W.</foaf:givenname><foaf:surname>Jetz</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n298">
+       <foaf:givenname>G. H.</foaf:givenname><foaf:surname>Thomas</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n299">
+       <foaf:givenname>J. B.</foaf:givenname><foaf:surname>Joy</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n300">
+       <foaf:givenname>K.</foaf:givenname><foaf:surname>Hartmann</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n301">
+       <foaf:givenname>A. O.</foaf:givenname><foaf:surname>Mooers</foaf:surname>
+    </foaf:Person>
+    <z:UserItem rdf:about="http://zotero.org/users/local/HWQot3vl/items/USUC5KFA">
+        <res:resource>
+            <bibo:AcademicArticle>
+                <dcterms:title>The NCBI Taxonomy database</dcterms:title>
+                <dcterms:abstract>The NCBI Taxonomy database (http://www.ncbi.nlm.nih.gov/taxonomy) is the standard nomenclature and classification repository for the International Nucleotide Sequence Database Collaboration (INSDC), comprising the GenBank, ENA (EMBL) and DDBJ databases. It includes organism names and taxonomic lineages for each of the sequences represented in the INSDC's nucleotide and protein sequence databases. The taxonomy database is manually curated by a small group of scientists at the NCBI who use the current taxonomic literature to maintain a phylogenetic taxonomy for the source organisms represented in the sequence databases. The taxonomy database is a central organizing hub for many of the resources at the NCBI, and provides a means for clustering elements within other domains of NCBI web site, for internal linking between domains of the Entrez system and for linking out to taxon-specific external resources on the web. Our primary purpose is to index the domain of sequences as conveniently as possible for our user community.</dcterms:abstract>
+                <bibo:pages>D136-43</bibo:pages>
+                <z:extra>Federhen, Scott England Nucleic Acids Res. 2012 Jan;40(Database issue):D136-43. doi: 10.1093/nar/gkr1178. Epub 2011 Dec 1.</z:extra>
+                <dcterms:creator rdf:nodeID="n312"/>
+                <bibo:authorList>
+                   <rdf:Seq><rdf:li rdf:nodeID="n312"/></rdf:Seq>
+                </bibo:authorList>
+                <dcterms:isPartOf>
+                    <bibo:Issue>
+                        <bibo:volume>40</bibo:volume>
+                        <bibo:issue>Database issue</bibo:issue>
+                        <dcterms:date>2012</dcterms:date>
+                        <dcterms:isPartOf>
+                            <bibo:Journal>
+                                <dcterms:title>Nucleic acids research</dcterms:title>
+                            </bibo:Journal>
+                        </dcterms:isPartOf>
+                    </bibo:Issue>
+                </dcterms:isPartOf>
+            </bibo:AcademicArticle>
+        </res:resource>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>*Databases</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+            <ctag:UserTag>
+               <ctag:label>Genetic *Phylogeny Terminology as Topic</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+    </z:UserItem>
+    <foaf:Person rdf:nodeID="n312">
+       <foaf:givenname>S.</foaf:givenname><foaf:surname>Federhen</foaf:surname>
+    </foaf:Person>
+    <z:UserItem rdf:about="http://zotero.org/users/local/HWQot3vl/items/XXT5KVJ4">
+        <res:resource>
+            <bibo:AcademicArticle>
+                <dcterms:title>The taming of an impossible child: a standardized all-in approach to the phylogeny of Hymenoptera using public database sequences</dcterms:title>
+                <dcterms:abstract>BACKGROUND: Enormous molecular sequence data have been accumulated over the past several years and are still exponentially growing with the use of faster and cheaper sequencing techniques. There is high and widespread interest in using these data for phylogenetic analyses. However, the amount of data that one can retrieve from public sequence repositories is virtually impossible to tame without dedicated software that automates processes. Here we present a novel bioinformatics pipeline for downloading, formatting, filtering and analyzing public sequence data deposited in GenBank. It combines some well-established programs with numerous newly developed software tools (available at http://software.zfmk.de/). RESULTS: We used the bioinformatics pipeline to investigate the phylogeny of the megadiverse insect order Hymenoptera (sawflies, bees, wasps and ants) by retrieving and processing more than 120,000 sequences and by selecting subsets under the criteria of compositional homogeneity and defined levels of density and overlap. Tree reconstruction was done with a partitioned maximum likelihood analysis from a supermatrix with more than 80,000 sites and more than 1,100 species. In the inferred tree, consistent with previous studies, &quot;Symphyta&quot; is paraphyletic. Within Apocrita, our analysis suggests a topology of Stephanoidea + (Ichneumonoidea + (Proctotrupomorpha + (Evanioidea + Aculeata))). Despite the huge amount of data, we identified several persistent problems in the Hymenoptera tree. Data coverage is still extremely low, and additional data have to be collected to reliably infer the phylogeny of Hymenoptera. CONCLUSIONS: While we applied our bioinformatics pipeline to Hymenoptera, we designed the approach to be as general as possible. With this pipeline, it is possible to produce phylogenetic trees for any taxonomic group and to monitor new data and tree robustness in a taxon of interest. It therefore has great potential to meet the challenges of the phylogenomic era and to deepen our understanding of the tree of life.</dcterms:abstract>
+                <bibo:pages>55</bibo:pages>
+                <z:extra>Peters, Ralph S Meyer, Benjamin Krogmann, Lars Borner, Janus Meusemann, Karen Schutte, Kai Niehuis, Oliver Misof, Bernhard England BMC Biol. 2011 Aug 18;9:55. doi: 10.1186/1741-7007-9-55.</z:extra>
+                <dcterms:creator rdf:nodeID="n322"/>
+                <bibo:authorList>
+                    <rdf:Seq>
+                        <rdf:li rdf:nodeID="n322"/>
+                        <rdf:li rdf:nodeID="n324"/>
+                        <rdf:li rdf:nodeID="n325"/>
+                        <rdf:li rdf:nodeID="n326"/>
+                        <rdf:li rdf:nodeID="n327"/>
+                        <rdf:li rdf:nodeID="n328"/>
+                        <rdf:li rdf:nodeID="n329"/>
+                        <rdf:li rdf:nodeID="n330"/>
+                    </rdf:Seq>
+                </bibo:authorList>
+                <dcterms:creator rdf:nodeID="n324"/>
+                <dcterms:creator rdf:nodeID="n325"/>
+                <dcterms:creator rdf:nodeID="n326"/>
+                <dcterms:creator rdf:nodeID="n327"/>
+                <dcterms:creator rdf:nodeID="n328"/>
+                <dcterms:creator rdf:nodeID="n329"/>
+                <dcterms:creator rdf:nodeID="n330"/>
+                <dcterms:isPartOf>
+                    <bibo:Issue>
+                        <bibo:volume>9</bibo:volume>
+                        <dcterms:date>2011</dcterms:date>
+                        <dcterms:isPartOf>
+                            <bibo:Journal>
+                               <dcterms:title>BMC biology</dcterms:title>
+                            </bibo:Journal>
+                        </dcterms:isPartOf>
+                    </bibo:Issue>
+                </dcterms:isPartOf>
+            </bibo:AcademicArticle>
+        </res:resource>
+        <ctag:tagged>
+            <ctag:UserTag>
+                <ctag:label>Animals Biological Evolution Computational Biology/*methods *Databases</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+        <ctag:tagged>
+            <ctag:UserTag>
+                <ctag:label>Genetic Hymenoptera/*classification/genetics Molecular Sequence Data *Phylogeny</ctag:label>
+            </ctag:UserTag>
+        </ctag:tagged>
+    </z:UserItem>
+    <foaf:Person rdf:nodeID="n322">
+       <foaf:givenname>R. S.</foaf:givenname><foaf:surname>Peters</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n324">
+       <foaf:givenname>B.</foaf:givenname><foaf:surname>Meyer</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n325">
+       <foaf:givenname>L.</foaf:givenname><foaf:surname>Krogmann</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n326">
+       <foaf:givenname>J.</foaf:givenname><foaf:surname>Borner</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n327">
+       <foaf:givenname>K.</foaf:givenname><foaf:surname>Meusemann</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n328">
+       <foaf:givenname>K.</foaf:givenname><foaf:surname>Schutte</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n329">
+       <foaf:givenname>O.</foaf:givenname><foaf:surname>Niehuis</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n330">
+       <foaf:givenname>B.</foaf:givenname><foaf:surname>Misof</foaf:surname>
+    </foaf:Person>
+</rdf:RDF>
