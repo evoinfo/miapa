@@ -948,6 +948,9 @@ Alternatively, we could model this as dc:isPartOf some prov:Plan.</rdfs:comment>
     <rdf:Description rdf:about="&obo;CDAO_0000196">
         <rdfs:comment>For MIAPA reporting, recommended to be used for referencing the corresponding tree (tip) node(s) from a data matrix row</rdfs:comment>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;CDAO_0000187">
+        <rdfs:comment>For MIAPA reporting, this property (and/or its inverse) should be used to establish the relationship between rows of the data matrix and nodes in the tree(s).</rdfs:comment>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;CDAO_0000215">
         <rdfs:comment>In MIAPA-compliant reporting, can be used to provide the value for instances of cdao:EdgeLength (or one of its subclasses) used for annotating edges with lengths.</rdfs:comment>
     </rdf:Description>
