@@ -42,7 +42,7 @@ The Checklist
       * whether alignment was manually corrected or edited
    * Tree inference method
       * name of software used, version of program
-      * parameters used, including model of evolution, and optimality criterion
+      * parameters used, including model of evolution, optimality criterion, and treatment of 'gap' characters
       * character weights if (normally then morphological) characters were weighted. (Typically, inference programs provide these in their log files, and thus the information could be copied from there.)
 
 FAQ
