@@ -1,19 +1,7 @@
 MIAPA Checklist
 ===============
+The MIAPA (minimum information about a phylogenetic analysis) checklist details the list of metadata necessary for researchers to evaluate or reuse a published phylogeny.
 
-Contributors
-------------
-
-The first reconciled draft checklist was created by [the participants](http://wiki.tdwg.org/twiki/bin/view/Phylogenetics/MIAPAWorkshop2011#Participants) of the 2011 TDWG workshop (see below).
-
-Authors of and contributors to subsequent revisions will be listed here.
-
-History
--------
-
-* The publication by [Leebens-Mack et al (2006), "Taking the first steps towards a standard for reporting on phylogenies: Minimum Information About a Phylogenetic Analysis (MIAPA)"](http://dx.doi.org/10.1089/omi.2006.10.231), was the first articulating the need and vision for MIAPA, though it not propose an actual checklist, vocabulary, or ontology.
-* The workshop "Steps towards a Minimum Information About a Phylogenetic Analysis (MIAPA) Standard", held at the 2011 TDWG Conference in New Orleans, LA, resulted in the [first draft checklist](http://wiki.tdwg.org/twiki/bin/view/Phylogenetics/MIAPADraft#Reconciled_draft_checklist).
-* At the [2nd Phylotastic Hackathon](http://evoio.org/wiki/Phylotastic_II), a group worked on several targets towards advancing MIAPA, including a MIAPA ontology and this version-tracked evolvable form of the checklist.  
 
 The Checklist
 -------------
@@ -44,15 +32,4 @@ The Checklist
       * name of software used, version of program
       * parameters used, including model of evolution, and optimality criterion
       * character weights if (normally then morphological) characters were weighted. (Typically, inference programs provide these in their log files, and thus the information could be copied from there.)
-
-FAQ
-===
-
-How to cite this document
--------------------------
-
-*Not sure about this yet.*
-
-Why a checklist
----------------
 
