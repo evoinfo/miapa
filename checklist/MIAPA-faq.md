@@ -13,7 +13,7 @@ Contributors
 
 The first reconciled draft checklist was created by [the participants](http://wiki.tdwg.org/twiki/bin/view/Phylogenetics/MIAPAWorkshop2011#Participants) of the 2011 TDWG workshop (see below).
 
-Authors of and contributors to subsequent revisions will be listed here.
+This github repository was created by [Karen Cranston](http://github.com/kcranston) and [Hilmar Lapp](http://github.com/hlapp)
 
 History
 -------
