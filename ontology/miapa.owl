@@ -40,8 +40,8 @@
 This ontology is maintained at http://github.com/miapa/miapa, and requests for changes or additions should be filed at the issue tracker there. The discussion list is at miapa-discuss@googlegroups.com. Further resources about MIAPA can be found at the project&apos;s main page at http://evoio.org/wiki/MIAPA.</dc:description>
         <dc:creator>Hilmar Lapp</dc:creator>
         <owl:imports rdf:resource="&obo;cdao.owl"/>
-        <owl:versionIRI rdf:resource="&obo;miapa/2013-02-01/miapa.owl"/>
-        <owl:imports rdf:resource="http://www.w3.org/ns/prov#"/>
+        <owl:versionIRI rdf:resource="&obo;miapa/2017-TODO-TODO/miapa.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o"/>
     </owl:Ontology>
     
 
